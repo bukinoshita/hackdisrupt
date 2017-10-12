@@ -4,38 +4,44 @@
     "7A143FC0-A8D1-4A40-BA0C-6AD88C277549": {
       "name": "Symbols",
       "artboards": {
-        "80A671AC-6A8D-46F7-951B-1C8064D68603": {
-          "name": "buttons\/small\/with-icon\/front"
+        "61625A1F-2F98-4C23-9634-557EE87A1F73": {
+          "name": "icons\/light\/github"
         },
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
         },
-        "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
-          "name": "buttons\/normal\/with-icon\/front"
+        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
+          "name": "buttons\/small\/default"
+        },
+        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
+          "name": "buttons\/normal\/default"
         },
         "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
           "name": "buttons\/large\/default"
         },
+        "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6": {
+          "name": "buttons\/small\/with-icon\/back"
+        },
         "77FB982F-D2E4-4F46-8A14-A7D0008C8459": {
           "name": "buttons\/large\/with-icon\/back"
-        },
-        "7330DF5C-2CDD-4050-946D-5FEEC7F0817D": {
-          "name": "buttons\/large\/with-icon\/front"
-        },
-        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
-          "name": "buttons\/small\/default"
         },
         "FCED6CE5-D700-4243-B8A2-0276E190C31D": {
           "name": "buttons\/normal\/with-icon\/back"
         },
-        "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6": {
-          "name": "buttons\/small\/with-icon\/back"
+        "80A671AC-6A8D-46F7-951B-1C8064D68603": {
+          "name": "buttons\/small\/with-icon\/front"
         },
-        "C14C84FC-0CDB-46FD-BE5A-67DC71733823": {
-          "name": "arrow-right"
+        "7A5686BC-AECD-4436-B42E-50212793D79B": {
+          "name": "icons\/light\/refresh-cw"
         },
-        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
-          "name": "buttons\/normal\/default"
+        "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
+          "name": "buttons\/normal\/with-icon\/front"
+        },
+        "7330DF5C-2CDD-4050-946D-5FEEC7F0817D": {
+          "name": "buttons\/large\/with-icon\/front"
+        },
+        "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
+          "name": "icons\/light\/arrow-right"
         }
       }
     },
