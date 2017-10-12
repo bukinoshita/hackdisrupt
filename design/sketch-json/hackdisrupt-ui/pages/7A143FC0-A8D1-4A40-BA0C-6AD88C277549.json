@@ -3793,7 +3793,7 @@
         "layerListExpandedType": 0,
         "name": "github",
         "nameIsFixed": false,
-        "resizingConstraint": 63,
+        "resizingConstraint": 45,
         "resizingType": 0,
         "rotation": 0,
         "shouldBreakMaskChain": false,
@@ -4225,7 +4225,7 @@
     },
     "includeBackgroundColorInInstance": false,
     "symbolID": "11D397CE-AAE5-4395-9BD7-CB64FF8CA8FB",
-    "changeIdentifier": 105
+    "changeIdentifier": 110
   }, {
     "_class": "symbolMaster",
     "do_objectID": "FCED6CE5-D700-4243-B8A2-0276E190C31D",
@@ -4284,7 +4284,7 @@
       "isFlippedVertical": false,
       "isLocked": false,
       "isVisible": true,
-      "layerListExpandedType": 0,
+      "layerListExpandedType": 2,
       "name": "buttons\/normal-with-icon-back",
       "nameIsFixed": true,
       "resizingConstraint": 63,
@@ -4553,7 +4553,7 @@
           "layerListExpandedType": 0,
           "name": "github",
           "nameIsFixed": false,
-          "resizingConstraint": 63,
+          "resizingConstraint": 45,
           "resizingType": 0,
           "rotation": 0,
           "shouldBreakMaskChain": false,
@@ -4886,7 +4886,7 @@
     },
     "includeBackgroundColorInInstance": false,
     "symbolID": "BDED1197-0DA5-48B1-BE43-5F9B751595AB",
-    "changeIdentifier": 43
+    "changeIdentifier": 45
   }, {
     "_class": "symbolMaster",
     "do_objectID": "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6",
@@ -5115,7 +5115,7 @@
         "layerListExpandedType": 0,
         "name": "github",
         "nameIsFixed": false,
-        "resizingConstraint": 63,
+        "resizingConstraint": 45,
         "resizingType": 0,
         "rotation": 0,
         "shouldBreakMaskChain": false,
@@ -5547,7 +5547,7 @@
     },
     "includeBackgroundColorInInstance": false,
     "symbolID": "29F17A98-D861-47F6-B94C-EC103C814A34",
-    "changeIdentifier": 58
+    "changeIdentifier": 60
   }],
   "horizontalRulerData": {
     "_class": "rulerData",

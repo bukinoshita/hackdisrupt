@@ -56,7 +56,7 @@
     "isFlippedVertical": false,
     "isLocked": false,
     "isVisible": true,
-    "layerListExpandedType": 1,
+    "layerListExpandedType": 0,
     "name": "home",
     "nameIsFixed": true,
     "resizingConstraint": 63,
@@ -237,6 +237,51 @@
         "clippingMaskMode": 0,
         "hasClippingMask": false,
         "windingRule": 1
+      }, {
+        "_class": "symbolInstance",
+        "do_objectID": "875007D0-C557-4DE1-A6E2-3700067598A2",
+        "exportOptions": {
+          "_class": "exportOptions",
+          "exportFormats": [],
+          "includedLayerIds": [],
+          "layerOptions": 0,
+          "shouldTrim": false
+        },
+        "frame": {
+          "_class": "rect",
+          "constrainProportions": false,
+          "height": 36,
+          "width": 170,
+          "x": 1066,
+          "y": 14
+        },
+        "isFlippedHorizontal": false,
+        "isFlippedVertical": false,
+        "isLocked": false,
+        "isVisible": true,
+        "layerListExpandedType": 0,
+        "name": "buttons\/small\/with-icon\/back",
+        "nameIsFixed": false,
+        "resizingConstraint": 63,
+        "resizingType": 0,
+        "rotation": 0,
+        "shouldBreakMaskChain": false,
+        "style": {
+          "_class": "style",
+          "endDecorationType": 0,
+          "miterLimit": 10,
+          "startDecorationType": 0
+        },
+        "horizontalSpacing": 0,
+        "masterInfluenceEdgeMaxXPadding": 0,
+        "masterInfluenceEdgeMaxYPadding": 0,
+        "masterInfluenceEdgeMinXPadding": 0,
+        "masterInfluenceEdgeMinYPadding": 0,
+        "overrides": {
+          "BCC7CEF8-2F8F-4470-B2DC-2E4F6014A9C1": "ENTRAR COM GITHUB"
+        },
+        "symbolID": "7EB7263D-0369-4AE6-A6C7-89F84CB83806",
+        "verticalSpacing": 0
       }, {
         "_class": "group",
         "do_objectID": "A70043B9-9D82-4475-A6D1-961BD9ED3AFD",

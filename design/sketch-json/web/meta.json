@@ -14,7 +14,7 @@
   "fonts": ["SFUIDisplay-Ultralight", "SFUIDisplay-Medium", "SFUIDisplay-Heavy", "SFUIDisplay-Semibold", "SFUIDisplay-Light"],
   "compatibilityVersion": 93,
   "app": "com.bohemiancoding.sketch3",
-  "autosaved": 1,
+  "autosaved": 0,
   "variant": "NONAPPSTORE",
   "created": {
     "commit": "80ddf8a336f285dfa2b96d05e69dba5714b6f0c4",
