@@ -1,0 +1,23 @@
+{
+  "name": "hackdisrupt",
+  "version": "0.0.0",
+  "description": "Comece a aprender programação com uma experiência nova",
+  "main": "index.js",
+  "repository": "https://github.com/bukinoshita/hackdisrupt.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^4.0.0-beta.6",
+    "nprogress": "^0.2.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "read-package": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.6.0",
+    "xo": "^0.18.2"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="985px" height="179px" viewBox="0 0 985 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="200" font-family="SFUIDisplay-Ultralight, SF UI Display" font-weight="200">
+        <g id="logo-text" fill="#000000">
+            <text id="hackdisrupt">
+                <tspan x="-12" y="144">hack</tspan>
+                <tspan x="368.175781" y="144" font-family="SFUIDisplay-Semibold, SF UI Display" font-weight="500">disrupt</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
