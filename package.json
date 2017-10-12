@@ -13,9 +13,7 @@
     "code",
     "programming",
     "brasil",
-    "código",
-    "codar",
-    "programação"
+    "codar"
   ],
   "scripts": {
     "dev": "next dev"
