@@ -6,6 +6,17 @@
   "repository": "https://github.com/bukinoshita/hackdisrupt.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "hackdisrupt",
+    "hack",
+    "disrupt",
+    "code",
+    "programming",
+    "brasil",
+    "código",
+    "codar",
+    "programação"
+  ],
   "scripts": {
     "dev": "next dev"
   },
