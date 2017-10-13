@@ -7,6 +7,9 @@
         "61625A1F-2F98-4C23-9634-557EE87A1F73": {
           "name": "icons\/light\/github"
         },
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
+        },
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
         },
@@ -28,8 +31,17 @@
         "FCED6CE5-D700-4243-B8A2-0276E190C31D": {
           "name": "buttons\/normal\/with-icon\/back"
         },
+        "C6572A67-5658-4BA0-A992-523390DB9B34": {
+          "name": "buttons\/large\/colors\/primary"
+        },
         "80A671AC-6A8D-46F7-951B-1C8064D68603": {
           "name": "buttons\/small\/with-icon\/front"
+        },
+        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
+          "name": "buttons\/large\/colors\/primary-hover"
+        },
+        "9D650A4F-7CD3-43CA-B2A9-683B116D7579": {
+          "name": "buttons\/normal\/colors\/primary-hover"
         },
         "7A5686BC-AECD-4436-B42E-50212793D79B": {
           "name": "icons\/light\/refresh-cw"
