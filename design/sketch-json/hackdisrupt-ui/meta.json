@@ -13,14 +13,14 @@
         "E7C89EF5-D791-4498-A8ED-3CAA7545CD4F": {
           "name": "icons\/light\/arrow-right"
         },
-        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
-          "name": "buttons\/normal\/colors\/primary"
+        "5A47A0DA-5DB3-4E8C-99BA-AA7380BC3E62": {
+          "name": "buttons\/small-with-icon-back\/primary-hover"
         },
         "9D650A4F-7CD3-43CA-B2A9-683B116D7579": {
           "name": "buttons\/normal\/colors\/primary-hover"
         },
-        "0527E68C-8B18-4DFD-AAE0-5E9B837D594D": {
-          "name": "buttons\/small\/colors\/primary-hover"
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
         },
         "35DBECAC-C92B-41FA-A0E1-B15C8922AB24": {
           "name": "cards\/course"
@@ -39,6 +39,9 @@
         },
         "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
           "name": "icons\/js"
+        },
+        "0527E68C-8B18-4DFD-AAE0-5E9B837D594D": {
+          "name": "buttons\/small\/colors\/primary-hover"
         },
         "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
           "name": "buttons\/normal\/default"
@@ -64,14 +67,14 @@
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
         },
+        "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
+          "name": "icons\/light\/arrow-right"
+        },
         "2C12898F-7A84-473D-A2E5-E752FECE966F": {
           "name": "buttons\/normal-with-icon-front\/primary-hover"
         },
         "80A671AC-6A8D-46F7-951B-1C8064D68603": {
           "name": "buttons\/small\/with-icon\/front"
-        },
-        "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
-          "name": "icons\/light\/arrow-right"
         },
         "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
           "name": "buttons\/small\/default"
@@ -81,6 +84,9 @@
         },
         "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
           "name": "buttons\/normal\/with-icon\/front"
+        },
+        "C1712A1E-222D-4C81-A7F8-5030432CC3E2": {
+          "name": "buttons\/small-with-icon-back\/primary"
         },
         "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
           "name": "buttons\/large\/default"
