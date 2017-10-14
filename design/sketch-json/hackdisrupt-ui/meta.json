@@ -10,14 +10,17 @@
         "7330DF5C-2CDD-4050-946D-5FEEC7F0817D": {
           "name": "buttons\/large\/with-icon\/front"
         },
-        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
-          "name": "buttons\/normal\/colors\/primary"
-        },
         "E7C89EF5-D791-4498-A8ED-3CAA7545CD4F": {
           "name": "icons\/light\/arrow-right"
         },
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
+        },
         "9D650A4F-7CD3-43CA-B2A9-683B116D7579": {
           "name": "buttons\/normal\/colors\/primary-hover"
+        },
+        "0527E68C-8B18-4DFD-AAE0-5E9B837D594D": {
+          "name": "buttons\/small\/colors\/primary-hover"
         },
         "35DBECAC-C92B-41FA-A0E1-B15C8922AB24": {
           "name": "cards\/course"
@@ -31,20 +34,26 @@
         "7A5686BC-AECD-4436-B42E-50212793D79B": {
           "name": "icons\/light\/refresh-cw"
         },
-        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
-          "name": "buttons\/normal\/default"
+        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
+          "name": "buttons\/large\/colors\/primary-hover"
         },
         "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
           "name": "icons\/js"
         },
-        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
-          "name": "buttons\/large\/colors\/primary-hover"
+        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
+          "name": "buttons\/normal\/default"
+        },
+        "D41467D3-AD6E-4D81-A8AC-51A416C75B87": {
+          "name": "buttons\/small-with-icon-front\/colors\/primary"
+        },
+        "02568A46-D9CC-459A-9EEA-199F58615A3A": {
+          "name": "buttons\/small\/colors\/primary"
+        },
+        "B37366E4-F940-4A04-A6CA-1A84BF8B5E2E": {
+          "name": "buttons\/small-with-icon-front\/colors\/primary"
         },
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
-        },
-        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
-          "name": "buttons\/small\/default"
         },
         "80A671AC-6A8D-46F7-951B-1C8064D68603": {
           "name": "buttons\/small\/with-icon\/front"
@@ -52,14 +61,14 @@
         "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
           "name": "icons\/light\/arrow-right"
         },
+        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
+          "name": "buttons\/small\/default"
+        },
         "61625A1F-2F98-4C23-9634-557EE87A1F73": {
           "name": "icons\/light\/github"
         },
         "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
           "name": "buttons\/normal\/with-icon\/front"
-        },
-        "1BAE4810-338A-4E40-8921-275582F9BB87": {
-          "name": "buttons\/large\/with-icon\/front"
         },
         "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
           "name": "buttons\/large\/default"
