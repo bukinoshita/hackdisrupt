@@ -31,20 +31,23 @@
         "77FB982F-D2E4-4F46-8A14-A7D0008C8459": {
           "name": "buttons\/large\/with-icon\/back"
         },
+        "72AD6257-2988-4CB2-BFC9-05779B8D4053": {
+          "name": "buttons\/normal-with-icon-back\/primary"
+        },
+        "BAB1FCEA-9AAB-4DA9-8CC5-EF60508DC404": {
+          "name": "buttons\/normal-with-icon-back\/primary-hover"
+        },
         "7A5686BC-AECD-4436-B42E-50212793D79B": {
           "name": "icons\/light\/refresh-cw"
-        },
-        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
-          "name": "buttons\/large\/colors\/primary-hover"
         },
         "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
           "name": "icons\/js"
         },
+        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
+          "name": "buttons\/large\/colors\/primary-hover"
+        },
         "0527E68C-8B18-4DFD-AAE0-5E9B837D594D": {
           "name": "buttons\/small\/colors\/primary-hover"
-        },
-        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
-          "name": "buttons\/normal\/default"
         },
         "8147798B-B494-41A8-ACA9-B4D6ECF23A58": {
           "name": "buttons\/large-with-icon-front\/primary-hover"
@@ -57,6 +60,9 @@
         },
         "B37366E4-F940-4A04-A6CA-1A84BF8B5E2E": {
           "name": "buttons\/small-with-icon-front\/colors\/primary"
+        },
+        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
+          "name": "buttons\/normal\/default"
         },
         "C87EA79D-93A4-4B48-9BD9-18CF2C323134": {
           "name": "buttons\/normal-with-icon-front\/primary"
