@@ -1,0 +1,38 @@
+{
+  "commit": "80ddf8a336f285dfa2b96d05e69dba5714b6f0c4",
+  "pagesAndArtboards": {
+    "398D33A9-727F-4D6E-A122-F1273C5CF22C": {
+      "name": "Page 1",
+      "artboards": {
+        "D8B8872A-DF26-4E97-B583-650711FE7870": {
+          "name": "home"
+        },
+        "0C30B35A-4205-43AA-862D-B992CFF7FE88": {
+          "name": "courses"
+        }
+      }
+    },
+    "C9CC7D6D-77C1-4398-9E25-D14F13F35B82": {
+      "name": "Symbols",
+      "artboards": {}
+    }
+  },
+  "version": 95,
+  "fonts": ["SFUIDisplay-Ultralight", "SFUIDisplay-Thin", "SFUIDisplay-Medium", "SFUIDisplay-Heavy", "SFUIDisplay-Semibold", "SFUIDisplay-Light"],
+  "compatibilityVersion": 93,
+  "app": "com.bohemiancoding.sketch3",
+  "autosaved": 0,
+  "variant": "NONAPPSTORE",
+  "created": {
+    "commit": "80ddf8a336f285dfa2b96d05e69dba5714b6f0c4",
+    "appVersion": "47",
+    "build": 45396,
+    "app": "com.bohemiancoding.sketch3",
+    "compatibilityVersion": 93,
+    "version": 95,
+    "variant": "NONAPPSTORE"
+  },
+  "saveHistory": ["NONAPPSTORE.45396"],
+  "appVersion": "47",
+  "build": 45396
+}

@@ -1,0 +1,99 @@
+{
+  "commit": "80ddf8a336f285dfa2b96d05e69dba5714b6f0c4",
+  "pagesAndArtboards": {
+    "7A143FC0-A8D1-4A40-BA0C-6AD88C277549": {
+      "name": "Symbols",
+      "artboards": {
+        "FCED6CE5-D700-4243-B8A2-0276E190C31D": {
+          "name": "buttons\/normal\/with-icon\/back"
+        },
+        "7330DF5C-2CDD-4050-946D-5FEEC7F0817D": {
+          "name": "buttons\/large\/with-icon\/front"
+        },
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
+        },
+        "E7C89EF5-D791-4498-A8ED-3CAA7545CD4F": {
+          "name": "icons\/light\/arrow-right"
+        },
+        "9D650A4F-7CD3-43CA-B2A9-683B116D7579": {
+          "name": "buttons\/normal\/colors\/primary-hover"
+        },
+        "35DBECAC-C92B-41FA-A0E1-B15C8922AB24": {
+          "name": "cards\/course"
+        },
+        "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6": {
+          "name": "buttons\/small\/with-icon\/back"
+        },
+        "77FB982F-D2E4-4F46-8A14-A7D0008C8459": {
+          "name": "buttons\/large\/with-icon\/back"
+        },
+        "7A5686BC-AECD-4436-B42E-50212793D79B": {
+          "name": "icons\/light\/refresh-cw"
+        },
+        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
+          "name": "buttons\/normal\/default"
+        },
+        "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
+          "name": "icons\/js"
+        },
+        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
+          "name": "buttons\/large\/colors\/primary-hover"
+        },
+        "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
+          "name": "section"
+        },
+        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
+          "name": "buttons\/small\/default"
+        },
+        "80A671AC-6A8D-46F7-951B-1C8064D68603": {
+          "name": "buttons\/small\/with-icon\/front"
+        },
+        "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
+          "name": "icons\/light\/arrow-right"
+        },
+        "61625A1F-2F98-4C23-9634-557EE87A1F73": {
+          "name": "icons\/light\/github"
+        },
+        "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
+          "name": "buttons\/normal\/with-icon\/front"
+        },
+        "1BAE4810-338A-4E40-8921-275582F9BB87": {
+          "name": "buttons\/large\/with-icon\/front"
+        },
+        "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
+          "name": "buttons\/large\/default"
+        },
+        "C6572A67-5658-4BA0-A992-523390DB9B34": {
+          "name": "buttons\/large\/colors\/primary"
+        }
+      }
+    },
+    "37BEE21B-90A6-4DDF-A4F7-727185733C06": {
+      "name": "Page 1",
+      "artboards": {
+        "7F8F5342-AB97-4B92-9731-686EC33E7C7E": {
+          "name": "ui"
+        }
+      }
+    }
+  },
+  "version": 95,
+  "fonts": ["SFUIDisplay-Ultralight", "SFUIDisplay-Medium", "SFUIDisplay-Semibold", "SFUIDisplay-Regular", "SFUIDisplay-Bold"],
+  "compatibilityVersion": 93,
+  "app": "com.bohemiancoding.sketch3",
+  "autosaved": 1,
+  "variant": "NONAPPSTORE",
+  "created": {
+    "commit": "80ddf8a336f285dfa2b96d05e69dba5714b6f0c4",
+    "appVersion": "47",
+    "build": 45396,
+    "app": "com.bohemiancoding.sketch3",
+    "compatibilityVersion": 93,
+    "version": 95,
+    "variant": "NONAPPSTORE"
+  },
+  "saveHistory": ["NONAPPSTORE.45396"],
+  "appVersion": "47",
+  "build": 45396
+}
