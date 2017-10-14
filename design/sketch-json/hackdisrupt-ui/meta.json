@@ -43,6 +43,9 @@
         "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
           "name": "buttons\/normal\/default"
         },
+        "8147798B-B494-41A8-ACA9-B4D6ECF23A58": {
+          "name": "buttons\/large-with-icon-front\/primary-hover"
+        },
         "D41467D3-AD6E-4D81-A8AC-51A416C75B87": {
           "name": "buttons\/small-with-icon-front\/colors\/primary"
         },
@@ -55,8 +58,14 @@
         "C87EA79D-93A4-4B48-9BD9-18CF2C323134": {
           "name": "buttons\/normal-with-icon-front\/primary"
         },
+        "B0A3D705-0E1E-42EF-A99C-56F4738B816C": {
+          "name": "buttons\/large-with-icon-front\/primary"
+        },
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
+        },
+        "2C12898F-7A84-473D-A2E5-E752FECE966F": {
+          "name": "buttons\/normal-with-icon-front\/primary-hover"
         },
         "80A671AC-6A8D-46F7-951B-1C8064D68603": {
           "name": "buttons\/small\/with-icon\/front"
@@ -66,9 +75,6 @@
         },
         "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
           "name": "buttons\/small\/default"
-        },
-        "2C12898F-7A84-473D-A2E5-E752FECE966F": {
-          "name": "buttons\/normal-with-icon-front\/primary-hover"
         },
         "61625A1F-2F98-4C23-9634-557EE87A1F73": {
           "name": "icons\/light\/github"

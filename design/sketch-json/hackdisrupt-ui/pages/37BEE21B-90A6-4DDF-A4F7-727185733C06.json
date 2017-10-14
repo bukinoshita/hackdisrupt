@@ -572,13 +572,15 @@
           "startDecorationType": 0
         },
         "horizontalSpacing": 0,
-        "masterInfluenceEdgeMaxXPadding": 1,
-        "masterInfluenceEdgeMaxYPadding": 1,
-        "masterInfluenceEdgeMinXPadding": 1,
-        "masterInfluenceEdgeMinYPadding": 1,
+        "masterInfluenceEdgeMaxXPadding": 0,
+        "masterInfluenceEdgeMaxYPadding": 0,
+        "masterInfluenceEdgeMinXPadding": 0,
+        "masterInfluenceEdgeMinYPadding": 0,
         "overrides": {
-          "015E3454-F6D8-4A71-94C6-0836738F604D": {
-            "symbolID": "B5FB699F-1C4F-4BD1-98A3-FF4F61E0461A"
+          "5729558A-501A-49F2-9921-1085A49D633F": {
+            "015E3454-F6D8-4A71-94C6-0836738F604D": {
+              "symbolID": "B5FB699F-1C4F-4BD1-98A3-FF4F61E0461A"
+            }
           }
         },
         "symbolID": "8902DC56-81CB-4F04-B8B3-2A8C238B677C",
