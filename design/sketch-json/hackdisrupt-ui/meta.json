@@ -52,6 +52,9 @@
         "B37366E4-F940-4A04-A6CA-1A84BF8B5E2E": {
           "name": "buttons\/small-with-icon-front\/colors\/primary"
         },
+        "C87EA79D-93A4-4B48-9BD9-18CF2C323134": {
+          "name": "buttons\/normal-with-icon-front\/primary"
+        },
         "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
           "name": "section"
         },
@@ -63,6 +66,9 @@
         },
         "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
           "name": "buttons\/small\/default"
+        },
+        "2C12898F-7A84-473D-A2E5-E752FECE966F": {
+          "name": "buttons\/normal-with-icon-front\/primary-hover"
         },
         "61625A1F-2F98-4C23-9634-557EE87A1F73": {
           "name": "icons\/light\/github"
