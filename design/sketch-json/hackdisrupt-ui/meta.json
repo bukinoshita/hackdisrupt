@@ -1,0 +1,141 @@
+{
+  "commit": "d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a",
+  "pagesAndArtboards": {
+    "7A143FC0-A8D1-4A40-BA0C-6AD88C277549": {
+      "name": "Symbols",
+      "artboards": {
+        "77FB982F-D2E4-4F46-8A14-A7D0008C8459": {
+          "name": "buttons\/large\/with-icon\/back"
+        },
+        "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
+          "name": "buttons\/small\/default"
+        },
+        "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
+          "name": "buttons\/normal\/with-icon\/front"
+        },
+        "02568A46-D9CC-459A-9EEA-199F58615A3A": {
+          "name": "buttons\/small\/colors\/primary"
+        },
+        "6D3282BC-50A0-47B8-ABB8-0D1739D3484B": {
+          "name": "buttons\/small-with-icon-back\/inverted"
+        },
+        "8147798B-B494-41A8-ACA9-B4D6ECF23A58": {
+          "name": "buttons\/large-with-icon-front\/primary-hover"
+        },
+        "7330DF5C-2CDD-4050-946D-5FEEC7F0817D": {
+          "name": "buttons\/large\/with-icon\/front"
+        },
+        "C87EA79D-93A4-4B48-9BD9-18CF2C323134": {
+          "name": "buttons\/normal-with-icon-front\/primary"
+        },
+        "9D650A4F-7CD3-43CA-B2A9-683B116D7579": {
+          "name": "buttons\/normal\/colors\/primary-hover"
+        },
+        "72AD6257-2988-4CB2-BFC9-05779B8D4053": {
+          "name": "buttons\/normal-with-icon-back\/primary"
+        },
+        "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
+          "name": "buttons\/large\/default"
+        },
+        "50C4B052-DFE9-4B27-94B6-A386712F5560": {
+          "name": "buttons\/large-with-icon-back\/primary"
+        },
+        "B56DB8B3-4255-4F2B-BE4B-98261E88E45D": {
+          "name": "icons\/light\/arrow-right"
+        },
+        "12DED205-03D1-4932-B395-9187E02CE9B1": {
+          "name": "buttons\/large-with-icon-back\/primary"
+        },
+        "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
+          "name": "buttons\/normal\/default"
+        },
+        "C6572A67-5658-4BA0-A992-523390DB9B34": {
+          "name": "buttons\/large\/colors\/primary"
+        },
+        "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
+          "name": "buttons\/large\/colors\/primary-hover"
+        },
+        "80A671AC-6A8D-46F7-951B-1C8064D68603": {
+          "name": "buttons\/small\/with-icon\/front"
+        },
+        "BAB1FCEA-9AAB-4DA9-8CC5-EF60508DC404": {
+          "name": "buttons\/normal-with-icon-back\/primary-hover"
+        },
+        "61625A1F-2F98-4C23-9634-557EE87A1F73": {
+          "name": "icons\/light\/github"
+        },
+        "E7C89EF5-D791-4498-A8ED-3CAA7545CD4F": {
+          "name": "icons\/light\/arrow-right"
+        },
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
+        },
+        "D41467D3-AD6E-4D81-A8AC-51A416C75B87": {
+          "name": "buttons\/small-with-icon-front\/colors\/primary"
+        },
+        "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
+          "name": "icons\/js"
+        },
+        "F1FE53D5-ABD9-4F2D-B3D1-DA681A28F552": {
+          "name": "section"
+        },
+        "C1712A1E-222D-4C81-A7F8-5030432CC3E2": {
+          "name": "buttons\/small-with-icon-back\/primary"
+        },
+        "FCED6CE5-D700-4243-B8A2-0276E190C31D": {
+          "name": "buttons\/normal\/with-icon\/back"
+        },
+        "7A5686BC-AECD-4436-B42E-50212793D79B": {
+          "name": "icons\/light\/refresh-cw"
+        },
+        "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6": {
+          "name": "buttons\/small\/with-icon\/back"
+        },
+        "2C12898F-7A84-473D-A2E5-E752FECE966F": {
+          "name": "buttons\/normal-with-icon-front\/primary-hover"
+        },
+        "B0A3D705-0E1E-42EF-A99C-56F4738B816C": {
+          "name": "buttons\/large-with-icon-front\/primary"
+        },
+        "0527E68C-8B18-4DFD-AAE0-5E9B837D594D": {
+          "name": "buttons\/small\/colors\/primary-hover"
+        },
+        "35DBECAC-C92B-41FA-A0E1-B15C8922AB24": {
+          "name": "cards\/course"
+        },
+        "B37366E4-F940-4A04-A6CA-1A84BF8B5E2E": {
+          "name": "buttons\/small-with-icon-front\/colors\/primary"
+        },
+        "5A47A0DA-5DB3-4E8C-99BA-AA7380BC3E62": {
+          "name": "buttons\/small-with-icon-back\/primary-hover"
+        }
+      }
+    },
+    "37BEE21B-90A6-4DDF-A4F7-727185733C06": {
+      "name": "ui",
+      "artboards": {
+        "7F8F5342-AB97-4B92-9731-686EC33E7C7E": {
+          "name": "ui"
+        }
+      }
+    }
+  },
+  "version": 95,
+  "fonts": ["SFUIDisplay-Ultralight", "SFUIDisplay-Medium", "SFUIDisplay-Semibold", "SFUIDisplay-Regular", "SFUIDisplay-Bold"],
+  "compatibilityVersion": 93,
+  "app": "com.bohemiancoding.sketch3",
+  "autosaved": 0,
+  "variant": "NONAPPSTORE",
+  "created": {
+    "commit": "d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a",
+    "appVersion": "47.1",
+    "build": 45422,
+    "app": "com.bohemiancoding.sketch3",
+    "compatibilityVersion": 93,
+    "version": 95,
+    "variant": "NONAPPSTORE"
+  },
+  "saveHistory": ["NONAPPSTORE.45422"],
+  "appVersion": "47.1",
+  "build": 45422
+}

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1426px" height="338px" viewBox="0 0 1426 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+<svg width="1476px" height="338px" viewBox="0 0 1476 338" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
     <title>logo-vertical</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo-vertical">
             <g id="Group-2">
-                <text id="hackdisrupt" font-family="SFUIDisplay-Ultralight, SF UI Display" font-size="200" font-weight="200" fill="#000000">
+                <text id="hackdisrupt" font-family="SFUIDisplay-Regular, SF UI Display" font-size="200" font-weight="normal" fill="#000000">
                     <tspan x="429" y="240">hack</tspan>
-                    <tspan x="809.175781" y="240" font-family="SFUIDisplay-Semibold, SF UI Display" font-weight="500">disrupt</tspan>
+                    <tspan x="834.46875" y="240" font-family="SFUIDisplay-Bold, SF UI Display" font-weight="bold">disrupt</tspan>
                 </text>
                 <g id="logo-symbol">
                     <path d="M137.925,5.43037552 C151.218,-1.80562448 172.755,-1.81462448 186.075,5.43037552 L299.925,67.3503755 C313.218,74.5863755 324,92.7033755 324,107.796376 L324,229.350376 C324,244.452376 313.245,262.542376 299.925,269.787376 L186.075,331.707376 C172.782,338.943376 151.245,338.961376 137.925,331.707376 L24.075,269.787376 C10.782,262.551376 0,244.434376 0,229.350376 L0,107.796376 C0,92.6943755 10.755,74.6043755 24.075,67.3503755 L137.925,5.43037552 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
