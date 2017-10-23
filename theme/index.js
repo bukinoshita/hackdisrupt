@@ -3,7 +3,8 @@
 export const colors = {
   white: '#FFFFFF',
   black: '#000000',
-  subtitle: '#ABABAB'
+  twitter: '#1DA1F2',
+  facebook: '#4267B2'
 }
 
 export const typography = {

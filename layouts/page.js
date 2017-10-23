@@ -23,7 +23,7 @@ Router.onRouteChangeError = stopProgress
 if (global.document) {
   const info = [
     `Version: ${pkg.version}`,
-    `Find the code here: ${pkg.repository.url}`,
+    `Find the code here: https://github.com/${pkg.repository}`,
     `Have a great day! 🎉`
   ]
 
@@ -39,7 +39,7 @@ const viewSource = event => {
     return
   }
 
-  document.location = pkg.repository.url
+  document.location = `https://github.com/${pkg.repository}`
   event.preventDefault()
 }
 
