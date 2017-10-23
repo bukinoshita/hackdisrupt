@@ -20,7 +20,7 @@
     }
   },
   "version": 95,
-  "fonts": ["SFUIDisplay-Regular", "SFUIDisplay-Bold"],
+  "fonts": [],
   "compatibilityVersion": 93,
   "app": "com.bohemiancoding.sketch3",
   "autosaved": 0,
