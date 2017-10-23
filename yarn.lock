@@ -2518,10 +2518,6 @@ has-flag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
 
-has-package@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/has-package/-/has-package-0.0.1.tgz#9cbc6f5b656cbf5bb3840a048741de06acbbd021"
-
 has-unicode@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
@@ -4191,12 +4187,6 @@ react@^16.0.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
-
-read-package@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/read-package/-/read-package-0.0.1.tgz#304c5069d008a8a32ff69af511c5399d30f80379"
-  dependencies:
-    has-package "^0.0.1"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
