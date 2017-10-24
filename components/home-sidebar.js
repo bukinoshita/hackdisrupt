@@ -22,11 +22,11 @@ const HomeSidebar = () => {
 
         <ul>
           <li>
-            <ShareTwitter />
+            <ShareTwitter href="https://bukinoshita.io" />
           </li>
 
           <li>
-            <ShareFacebook />
+            <ShareFacebook href="https://bukinoshita.io" />
           </li>
         </ul>
       </footer>
