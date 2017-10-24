@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 
+import { phone } from './../theme'
 import Row from './../ui/row'
 import Button from './../ui/button'
 import Header from './../components/header'
@@ -96,6 +97,18 @@ const HomeMain = () => {
           text-decoration: underline;
           opacity: 1;
           transition: 0.15s;
+        }
+
+        @media ${phone} {
+          h1 {
+            font-size: 40px;
+          }
+
+          h2,
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
       `}</style>
     </Row>

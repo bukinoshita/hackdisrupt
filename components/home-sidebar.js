@@ -1,6 +1,6 @@
 'use strict'
 
-import { colors } from './../theme'
+import { colors, tablet } from './../theme'
 import ShareTwitter from './share-twitter'
 import ShareFacebook from './share-facebook'
 
@@ -46,6 +46,10 @@ const HomeSidebar = () => {
           align-items: center;
         }
 
+        .sidebar-info {
+          width: 100%;
+        }
+
         .sidebar-footer {
           position: absolute;
           bottom: 50px;
@@ -86,6 +90,12 @@ const HomeSidebar = () => {
           display: inline-block;
           margin-left: 10px;
           margin-right: 10px;
+        }
+
+        @media ${tablet} {
+          .home-sidebar {
+            flex-basis: 100%;
+          }
         }
       `}</style>
     </aside>
