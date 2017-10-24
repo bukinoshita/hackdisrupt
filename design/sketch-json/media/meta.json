@@ -1,21 +1,20 @@
 {
   "commit": "d5cff89adfb6ffc45ca7b7d58d65cada3f63f39a",
   "pagesAndArtboards": {
-    "398D33A9-727F-4D6E-A122-F1273C5CF22C": {
+    "6296ABE5-D28C-478E-B348-BE58EDDBF533": {
       "name": "Page 1",
       "artboards": {
-        "D8B8872A-DF26-4E97-B583-650711FE7870": {
-          "name": "home"
+        "C5AA369C-F9B1-41E4-9BE5-F94818EF9366": {
+          "name": "github-cover"
+        },
+        "332A102B-3877-4500-92ED-FF8414505640": {
+          "name": "github-sponsor"
         }
       }
-    },
-    "C9CC7D6D-77C1-4398-9E25-D14F13F35B82": {
-      "name": "Symbols",
-      "artboards": {}
     }
   },
   "version": 95,
-  "fonts": ["SFUIDisplay-Thin", "SFUIDisplay-Bold", "SFUIDisplay-Medium", "SFUIDisplay-Semibold", "SFUIDisplay-Regular", "SFUIDisplay-Heavy", "SFUIDisplay-Light"],
+  "fonts": ["SFUIDisplay-Regular", "SFUIDisplay-Light"],
   "compatibilityVersion": 93,
   "app": "com.bohemiancoding.sketch3",
   "autosaved": 0,

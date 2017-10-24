@@ -109,7 +109,7 @@
       "miterLimit": 10,
       "startDecorationType": 0
     },
-    "hasClickThrough": false,
+    "hasClickThrough": true,
     "layers": [{
       "_class": "group",
       "do_objectID": "D25C866B-2346-47C6-9417-6C78F332BD2A",
@@ -319,7 +319,7 @@
         "isFlippedVertical": false,
         "isLocked": false,
         "isVisible": true,
-        "layerListExpandedType": 1,
+        "layerListExpandedType": 0,
         "name": "hero",
         "nameIsFixed": true,
         "resizingConstraint": 63,
@@ -1125,7 +1125,7 @@
           "isFlippedVertical": false,
           "isLocked": false,
           "isVisible": true,
-          "layerListExpandedType": 1,
+          "layerListExpandedType": 0,
           "name": "social-media",
           "nameIsFixed": true,
           "resizingConstraint": 63,
@@ -1144,7 +1144,14 @@
             "do_objectID": "60920687-9D0D-4B5C-90CA-D24C89FC18FF",
             "exportOptions": {
               "_class": "exportOptions",
-              "exportFormats": [],
+              "exportFormats": [{
+                "_class": "exportFormat",
+                "absoluteSize": 0,
+                "fileFormat": "svg",
+                "namingScheme": 1,
+                "scale": 0,
+                "visibleScaleType": 0
+              }],
               "includedLayerIds": [],
               "layerOptions": 0,
               "shouldTrim": false
@@ -1559,7 +1566,14 @@
             "do_objectID": "DC2830C4-EA9F-4E3F-AC3E-0CBBF2E1F510",
             "exportOptions": {
               "_class": "exportOptions",
-              "exportFormats": [],
+              "exportFormats": [{
+                "_class": "exportFormat",
+                "absoluteSize": 0,
+                "fileFormat": "svg",
+                "namingScheme": 1,
+                "scale": 0,
+                "visibleScaleType": 0
+              }],
               "includedLayerIds": [],
               "layerOptions": 0,
               "shouldTrim": false
@@ -1576,7 +1590,7 @@
             "isFlippedVertical": false,
             "isLocked": false,
             "isVisible": true,
-            "layerListExpandedType": 1,
+            "layerListExpandedType": 0,
             "name": "facebook",
             "nameIsFixed": true,
             "resizingConstraint": 63,
