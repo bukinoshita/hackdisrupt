@@ -1,3 +1,2 @@
-<p align="center">
-  <img src="/design/assets/logo-vertical%403x.png" width="400"/>
-</p>
+<img src="/design/assets/github-cover.png"/>
+<img src="/design/assets/github-sponsor.png"/>
