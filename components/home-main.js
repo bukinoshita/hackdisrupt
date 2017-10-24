@@ -1,6 +1,7 @@
 'use strict'
 
 import Link from 'next/link'
+import { Github } from 'react-feather'
 
 import { phone } from './../theme'
 import Row from './../ui/row'
@@ -23,25 +24,12 @@ const HomeMain = () => {
           </h2>
           <p>aprenda / ensine / forum / trampos / podcasts</p>
 
-          <Button>Entrar na lista beta</Button>
+          <Button>
+            <Github style={{ marginRight: '10px' }} size="16" />
+            Entrar na lista beta
+          </Button>
         </div>
       </div>
-
-      <footer>
-        <ul>
-          <li>
-            <Link href="/">
-              <span className="footer__link">Sobre nós</span>
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/">
-              <span className="footer__link">Github</span>
-            </Link>
-          </li>
-        </ul>
-      </footer>
 
       <style jsx>{`
         .hero {
