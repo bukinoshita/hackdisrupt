@@ -1,5 +1,7 @@
 'use strict'
 
+import Link from 'next/link'
+
 import Row from './../ui/row'
 import Button from './../ui/button'
 import Header from './../components/header'
@@ -15,13 +17,30 @@ const HomeMain = () => {
             <strong>aprenda</strong>programação
           </h1>
           <h2>
-            mais de <span>4618</span> programadores prontos para aprender.
+            mais de <span className="number">4618</span> programadores prontos
+            para aprender.
           </h2>
           <p>aprenda / ensine / forum / trampos / podcasts</p>
 
           <Button>Entrar na lista beta</Button>
         </div>
       </div>
+
+      <footer>
+        <ul>
+          <li>
+            <Link href="/">
+              <span className="footer__link">Sobre nós</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link href="/">
+              <span className="footer__link">Github</span>
+            </Link>
+          </li>
+        </ul>
+      </footer>
 
       <style jsx>{`
         .hero {
@@ -40,7 +59,7 @@ const HomeMain = () => {
           display: block;
         }
 
-        span {
+        .number {
           font-weight: 600;
         }
 
@@ -57,6 +76,26 @@ const HomeMain = () => {
           font-size: 18px;
           margin-top: 10px;
           margin-bottom: 50px;
+        }
+
+        li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        .footer__link {
+          font-weight: 500;
+          text-transform: lowercase;
+          color: #000;
+          cursor: pointer;
+          font-size: 14px;
+          opacity: 0.5;
+        }
+
+        .footer__link:hover {
+          text-decoration: underline;
+          opacity: 1;
+          transition: 0.15s;
         }
       `}</style>
     </Row>
