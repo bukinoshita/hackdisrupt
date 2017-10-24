@@ -3,18 +3,29 @@
 import { colors, tablet } from './../theme'
 import ShareTwitter from './share-twitter'
 import ShareFacebook from './share-facebook'
+import LanguageAnimation from './language-animation'
 
 const HomeSidebar = () => {
+  const languages = [
+    'javascript',
+    'go',
+    'ruby',
+    'nodejs',
+    'reactjs',
+    'redux',
+    'python',
+    'ios',
+    'android',
+    'react-native',
+    'java',
+    'c++'
+  ]
+
   return (
     <aside className="home-sidebar">
       <div className="sidebar-info">
         <h2>criando conteúdo em português para a comunidade brasileira.</h2>
-
-        <div className="languages">
-          <span>
-            hackdisrupt.<strong>javascript</strong>
-          </span>
-        </div>
+        <LanguageAnimation languages={languages} />
       </div>
 
       <footer className="sidebar-footer">
@@ -64,14 +75,6 @@ const HomeSidebar = () => {
           font-size: 18px;
           font-weight: 400;
           line-height: 28px;
-        }
-
-        .languages span {
-          color: ${colors.white};
-          font-size: 16px;
-          font-weight: 400;
-          margin-top: 50px;
-          font-weight: 300;
         }
 
         strong {
