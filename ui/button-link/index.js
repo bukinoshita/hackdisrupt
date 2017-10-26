@@ -3,23 +3,23 @@
 import classNames from 'classnames'
 import styles from './style'
 
-const Button = ({ children, type, onClick, color, size }) => {
+const ButtonLink = ({ children, type, onClick, color, size, href }) => {
   const classnames = classNames(size, color)
 
   return (
-    <button className={classnames} type={type} onClick={onClick}>
+    <a href={href} className={classnames} type={type}>
       {children}
 
       <style jsx>{styles}</style>
-    </button>
+    </a>
   )
 }
 
-Button.defaultProps = {
+ButtonLink.defaultProps = {
   onClick: null,
   size: 'normal',
   color: 'black',
   type: 'button'
 }
 
-export default Button
+export default ButtonLink

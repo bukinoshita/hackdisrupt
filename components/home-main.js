@@ -5,7 +5,7 @@ import { Github } from 'react-feather'
 
 import { phone } from './../theme'
 import Row from './../ui/row'
-import Button from './../ui/button'
+import ButtonLink from './../ui/button-link'
 import Header from './../components/header'
 
 const HomeMain = () => {
@@ -24,10 +24,10 @@ const HomeMain = () => {
           </h2>
           <p>aprenda / ensine / forum / trampos / podcasts</p>
 
-          <Button>
+          <ButtonLink href="http://localhost:3001/auth/github">
             <Github style={{ marginRight: '10px' }} size="16" />
             Entrar na lista beta
-          </Button>
+          </ButtonLink>
         </div>
       </div>
 
