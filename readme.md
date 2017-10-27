@@ -13,6 +13,7 @@ To run it locally on your own computer:
 - Install the dependencies
 - Run the project
 - Open your browser on https://localhost:3000
+- Check our [API](https://github.com/bukinoshita/hackdisrupt-api)
 
 ```bash
 $ git clone https://github.com/bukinoshita/hackdisrupt.git && cd hackdisrupt && yarn && yarn dev
