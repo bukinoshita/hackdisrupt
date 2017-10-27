@@ -8,7 +8,7 @@ import Row from './../ui/row'
 import ButtonLink from './../ui/button-link'
 import Header from './../components/header'
 
-const HomeMain = () => {
+const HomeMain = ({ count = 0 }) => {
   return (
     <Row>
       <Header />
@@ -19,8 +19,8 @@ const HomeMain = () => {
             <strong>aprenda</strong>programação
           </h1>
           <h2>
-            mais de <span className="number">4618</span> programadores prontos
-            para aprender.
+            mais de <span className="number">{count}</span> programadores
+            prontos para aprender.
           </h2>
           <p>aprenda / ensine / forum / trampos / podcasts</p>
 
