@@ -14,7 +14,7 @@ import HomeSidebar from './../components/home-sidebar'
 
 class Home extends Component {
   static async getInitialProps() {
-    const res = await fetch(`http://localhost:3001/users`)
+    const res = await fetch(`${process.env.API_URL}/users`)
     const json = await res.json()
     const logged = isLogged()
 

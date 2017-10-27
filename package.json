@@ -29,7 +29,23 @@
     "react-feather": "^1.0.7"
   },
   "devDependencies": {
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "eslint-config-prettier": "^2.6.0",
     "xo": "^0.18.2"
+  },
+  "babel": {
+    "presets": ["next/babel"],
+    "env": {
+      "development": {
+        "plugins": ["inline-dotenv"]
+      },
+      "staging": {
+        "plugins": ["inline-dotenv"]
+      },
+      "production": {
+        "plugins": ["transform-inline-environment-variables"]
+      }
+    }
   }
 }

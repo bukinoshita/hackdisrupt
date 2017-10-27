@@ -1,3 +1,5 @@
 node_modules
 .next
 *.sketch
+.env
+.env.production

@@ -11,6 +11,7 @@ To run it locally on your own computer:
 
 - Clone the repository
 - Install the dependencies
+- Create `.env` file on the root of the project and set `API_URL=https://hackdisrupt-api-staging.now.sh`
 - Run the project
 - Open your browser on https://localhost:3000
 - Check our [API](https://github.com/bukinoshita/hackdisrupt-api)
