@@ -8,7 +8,36 @@ import Row from './../ui/row'
 import ButtonLink from './../ui/button-link'
 import Header from './../components/header'
 
-const HomeMain = ({ count = 0 }) => {
+const HomeMain = ({ count = 0, logged = false }) => {
+  const message = logged ? (
+    <p>
+      > Você já está na lista. Obrigado por fazer parte! Acompanhe a gente no{' '}
+      <a href="https://github.com/bukinoshita/hackdisrupt">Github</a>.
+      <style jsx>{`
+        p {
+          max-width: 400px;
+          line-height: 24px;
+          font-size: 14px;
+          font-style: italic;
+          font-weight: 500;
+          text-transform: lowercase;
+          color: #000;
+        }
+
+        a {
+          color: #000;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      `}</style>
+    </p>
+  ) : (
+    <ButtonLink href="http://localhost:3001/auth/github">
+      <Github style={{ marginRight: '10px' }} size="16" />
+      Entrar na lista beta
+    </ButtonLink>
+  )
+
   return (
     <Row>
       <Header />
@@ -24,10 +53,7 @@ const HomeMain = ({ count = 0 }) => {
           </h2>
           <p>aprenda / ensine / forum / trampos / podcasts</p>
 
-          <ButtonLink href="http://localhost:3001/auth/github">
-            <Github style={{ marginRight: '10px' }} size="16" />
-            Entrar na lista beta
-          </ButtonLink>
+          {message}
         </div>
       </div>
 
