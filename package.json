@@ -30,6 +30,7 @@
     "react-cookies": "^0.1.0",
     "react-dom": "^16.0.0",
     "react-feather": "^1.0.7",
+    "share-facebook": "^0.0.1",
     "share-twitter": "^0.0.1"
   },
   "devDependencies": {
@@ -43,28 +44,45 @@
     "xo": "^0.18.2"
   },
   "babel": {
-    "presets": ["next/babel"],
+    "presets": [
+      "next/babel"
+    ],
     "env": {
       "development": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "staging": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "production": {
-        "plugins": ["transform-inline-environment-variables"]
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
       }
     }
   },
   "xo": {
-    "extends": ["prettier", "prettier/react", "plugin:react/recommended"],
+    "extends": [
+      "prettier",
+      "prettier/react",
+      "plugin:react/recommended"
+    ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
       "react/no-unescaped-entities": 0
     },
-    "ignores": ["node_modules"],
-    "globals": ["document", "fetch"]
+    "ignores": [
+      "node_modules"
+    ],
+    "globals": [
+      "document",
+      "fetch"
+    ]
   },
   "lint-staged": {
     "*.js": [

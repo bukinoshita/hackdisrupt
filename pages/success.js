@@ -6,6 +6,7 @@ import { Twitter, Facebook } from 'react-feather'
 import Router from 'next/router'
 import Link from 'next/link'
 import shareTwitter from 'share-twitter'
+import shareFacebook from 'share-facebook'
 
 import Page from './../layouts/page'
 
@@ -98,7 +99,12 @@ class Success extends Component {
               </ButtonLink>
 
               <ButtonLink
-                href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer&quote=nice"
+                href={shareFacebook({
+                  text,
+                  url,
+                  redirect_uri: url, // eslint-disable-line camelcase
+                  app_id: '1300099820094576' // eslint-disable-line camelcase
+                })}
                 color="facebook"
                 size="small"
               >

@@ -47,7 +47,7 @@ const HomeSidebar = () => {
           </li>
 
           <li>
-            <ShareFacebook href="https://bukinoshita.io" />
+            <ShareFacebook text={text} />
           </li>
         </ul>
       </footer>
