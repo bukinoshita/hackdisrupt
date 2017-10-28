@@ -23,7 +23,12 @@ const HomeSidebar = () => {
     'android',
     'react-native',
     'java',
-    'c++'
+    'c++',
+    'php',
+    'graphql',
+    'mongodb',
+    'rails',
+    'postgresql'
   ]
 
   return (
