@@ -14,11 +14,15 @@ import HomeSidebar from './../components/home-sidebar'
 
 class Home extends Component {
   static async getInitialProps() {
-    const res = await fetch(`${process.env.API_URL}/users`)
-    const json = await res.json()
-    const logged = isLogged()
+    try {
+      const res = await fetch(`${process.env.API_URL}/users`)
+      const json = await res.json()
+      const logged = isLogged()
 
-    return { users: json, logged }
+      return { users: json, logged }
+    } catch (err) {
+      return { users: { count: 0 }, logged: false }
+    }
   }
 
   render() {
