@@ -16,7 +16,9 @@
     "codar"
   ],
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "test": "xo",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -33,28 +35,39 @@
     "babel-plugin-inline-dotenv": "^1.1.1",
     "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
     "xo": "^0.18.2"
   },
   "babel": {
-    "presets": [
-      "next/babel"
-    ],
+    "presets": ["next/babel"],
     "env": {
       "development": {
-        "plugins": [
-          "inline-dotenv"
-        ]
+        "plugins": ["inline-dotenv"]
       },
       "staging": {
-        "plugins": [
-          "inline-dotenv"
-        ]
+        "plugins": ["inline-dotenv"]
       },
       "production": {
-        "plugins": [
-          "transform-inline-environment-variables"
-        ]
+        "plugins": ["transform-inline-environment-variables"]
       }
     }
+  },
+  "xo": {
+    "extends": ["prettier", "prettier/react", "plugin:react/recommended"],
+    "rules": {
+      "import/no-extraneous-dependencies": 0,
+      "import/no-unresolved": 0
+    },
+    "ignores": ["node_modules"]
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "prettier --semi false --single-quote --write",
+      "git add"
+    ]
   }
 }
