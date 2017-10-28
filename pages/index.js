@@ -1,14 +1,13 @@
 'use strict'
 
-import { Component } from 'react'
-import Link from 'next/link'
-import 'isomorphic-fetch'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 
 import Page from './../layouts/page'
 
 import { isLogged } from './../services/auth'
 
-import Row from './../ui/row'
 import HomeMain from './../components/home-main'
 import HomeSidebar from './../components/home-sidebar'
 
@@ -45,6 +44,11 @@ class Home extends Component {
       </Page>
     )
   }
+}
+
+Home.propTypes = {
+  users: PropTypes.object,
+  logged: PropTypes.bool
 }
 
 export default Home

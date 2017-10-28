@@ -1,6 +1,7 @@
 'use strict'
 
-import { colors } from './../theme'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const LanguageAnimation = ({ languages }) => {
   const language = languages.map((l, i) => {
@@ -50,6 +51,10 @@ const LanguageAnimation = ({ languages }) => {
   })
 
   return <div>{language}</div>
+}
+
+LanguageAnimation.propTypes = {
+  languages: PropTypes.array
 }
 
 export default LanguageAnimation

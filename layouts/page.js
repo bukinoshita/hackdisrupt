@@ -1,8 +1,10 @@
 'use strict'
 
+import React from 'react'
 import Head from 'next/head'
 import Router from 'next/router'
 import Progress from 'nprogress'
+import PropTypes from 'prop-types'
 
 import pkg from './../package'
 import { colors } from './../theme'
@@ -43,7 +45,7 @@ const viewSource = event => {
   event.preventDefault()
 }
 
-export default ({ children }) => {
+const Page = ({ children }) => {
   return (
     <main onDoubleClick={viewSource}>
       <Head>
@@ -132,3 +134,9 @@ export default ({ children }) => {
     </main>
   )
 }
+
+Page.propTypes = {
+  children: PropTypes.node
+}
+
+export default Page

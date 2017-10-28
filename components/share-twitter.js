@@ -1,6 +1,8 @@
 'use strict'
 
+import React from 'react'
 import shareTwitter from 'share-twitter'
+import PropTypes from 'prop-types'
 
 import { colors } from './../theme'
 
@@ -42,6 +44,12 @@ const ShareTwitter = ({ size, url, text }) => {
 
 ShareTwitter.defaultProps = {
   size: '30px'
+}
+
+ShareTwitter.propTypes = {
+  size: PropTypes.string,
+  url: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default ShareTwitter

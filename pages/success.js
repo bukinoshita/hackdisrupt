@@ -1,6 +1,7 @@
 'use strict'
 
-import { Component } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Twitter, Facebook } from 'react-feather'
 import Router from 'next/router'
 import Link from 'next/link'
@@ -160,6 +161,11 @@ class Success extends Component {
       </Page>
     )
   }
+}
+
+Success.propTypes = {
+  user: PropTypes.object,
+  url: PropTypes.object
 }
 
 export default Success

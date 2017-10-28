@@ -1,5 +1,8 @@
 'use strict'
 
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import { colors } from './../theme'
 
 const ShareFacebook = ({ size, href }) => {
@@ -40,6 +43,11 @@ const ShareFacebook = ({ size, href }) => {
 
 ShareFacebook.defaultProps = {
   size: '30px'
+}
+
+ShareFacebook.propTypes = {
+  size: PropTypes.string,
+  href: PropTypes.string
 }
 
 export default ShareFacebook

@@ -1,7 +1,8 @@
 'use strict'
 
-import Link from 'next/link'
+import React from 'react'
 import { Github } from 'react-feather'
+import PropTypes from 'prop-types'
 
 import { phone } from './../theme'
 import Row from './../ui/row'
@@ -127,6 +128,11 @@ const HomeMain = ({ count = 0, logged = false }) => {
       `}</style>
     </Row>
   )
+}
+
+HomeMain.propTypes = {
+  count: PropTypes.number,
+  logged: PropTypes.bool
 }
 
 export default HomeMain

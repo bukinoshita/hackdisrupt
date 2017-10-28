@@ -1,9 +1,12 @@
 'use strict'
 
+import React from 'react'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
+
 import styles from './style'
 
-const ButtonLink = ({ children, type, onClick, color, size, href }) => {
+const ButtonLink = ({ children, type, color, size, href }) => {
   const classnames = classNames(size, color)
 
   return (
@@ -20,6 +23,14 @@ ButtonLink.defaultProps = {
   size: 'normal',
   color: 'black',
   type: 'button'
+}
+
+ButtonLink.propTypes = {
+  children: PropTypes.node,
+  type: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.string,
+  href: PropTypes.string
 }
 
 export default ButtonLink

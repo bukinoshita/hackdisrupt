@@ -1,5 +1,6 @@
 'use strict'
 
+import React from 'react'
 import Link from 'next/link'
 
 import Logo from './../ui/logo'
@@ -7,7 +8,9 @@ import Logo from './../ui/logo'
 const Header = () => {
   return (
     <header>
-      <Logo size="150px" />
+      <Link href="/">
+        <Logo size="150px" />
+      </Link>
 
       <style jsx>{`
         header {

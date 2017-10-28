@@ -23,5 +23,5 @@ export const logout = () => {
 export const isLogged = () => {
   const token = getToken()
 
-  return !!token
+  return Boolean(token)
 }

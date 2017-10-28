@@ -1,5 +1,7 @@
 'use strict'
 
+import React from 'react'
+
 import { colors, tablet } from './../theme'
 import ShareTwitter from './share-twitter'
 import ShareFacebook from './share-facebook'
