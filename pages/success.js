@@ -4,6 +4,7 @@ import { Component } from 'react'
 import { Twitter, Facebook } from 'react-feather'
 import Router from 'next/router'
 import Link from 'next/link'
+import shareTwitter from 'share-twitter'
 
 import Page from './../layouts/page'
 
@@ -43,6 +44,10 @@ class Success extends Component {
   }
 
   render() {
+    const text =
+      'Entrei na lista do hackdisrupt! Aprenda programação com uma experiencia nova.'
+    const url = 'https://hackdisrupt.now.sh'
+
     const { name, username } = this.props.user
     const description = username ? (
       <p>
@@ -82,12 +87,20 @@ class Success extends Component {
             <h4>Compartilhe</h4>
 
             <div className="actions">
-              <ButtonLink color="twitter" size="small">
+              <ButtonLink
+                href={shareTwitter({ text, url })}
+                color="twitter"
+                size="small"
+              >
                 <Twitter size="10px" />
                 <span>Twitter</span>
               </ButtonLink>
 
-              <ButtonLink color="facebook" size="small">
+              <ButtonLink
+                href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=popup&href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&redirect_uri=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fexplorer&quote=nice"
+                color="facebook"
+                size="small"
+              >
                 <Facebook size="10px" />
                 <span>Facebook</span>
               </ButtonLink>

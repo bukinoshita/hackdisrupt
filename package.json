@@ -26,7 +26,8 @@
     "react": "^16.0.0",
     "react-cookies": "^0.1.0",
     "react-dom": "^16.0.0",
-    "react-feather": "^1.0.7"
+    "react-feather": "^1.0.7",
+    "share-twitter": "^0.0.1"
   },
   "devDependencies": {
     "babel-plugin-inline-dotenv": "^1.1.1",
@@ -35,16 +36,24 @@
     "xo": "^0.18.2"
   },
   "babel": {
-    "presets": ["next/babel"],
+    "presets": [
+      "next/babel"
+    ],
     "env": {
       "development": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "staging": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "production": {
-        "plugins": ["transform-inline-environment-variables"]
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
       }
     }
   }
