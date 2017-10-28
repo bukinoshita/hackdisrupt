@@ -32,7 +32,7 @@ const HomeMain = ({ count = 0, logged = false }) => {
       `}</style>
     </p>
   ) : (
-    <ButtonLink href="http://localhost:3001/auth/github">
+    <ButtonLink href={`${process.env.API_URL}/auth/github`}>
       <Github style={{ marginRight: '10px' }} size="16" />
       Entrar na lista beta
     </ButtonLink>
