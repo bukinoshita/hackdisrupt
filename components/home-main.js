@@ -52,7 +52,7 @@ const HomeMain = ({ count = 0, logged = false }) => {
             mais de <span className="number">{count}</span> programadores
             prontos para aprender.
           </h2>
-          <p>aprenda / ensine / forum / trampos / podcasts</p>
+          <p>aprender / ensinar / forum / trampos / podcasts</p>
 
           {message}
         </div>
