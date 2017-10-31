@@ -19,7 +19,11 @@ import ButtonLink from './../ui/button-link'
 class Success extends Component {
   static async getInitialProps({ query }) {
     const id = query.id
-    const res = await fetch(`${process.env.API_URL}/users`)
+    const res = await fetch(`${process.env.API_URL}/users`, {
+      headers: {
+        Authorization: process.env.API_TOKEN
+      }
+    })
     const json = await res.json()
     const user = json.users.map(user => {
       if (user.githubId === id) {
