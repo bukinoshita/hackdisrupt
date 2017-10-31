@@ -66,15 +66,15 @@ const Page = ({ children }) => {
         <meta name="twitter:description" content={pkg.description} />
         <meta
           property="twitter:image:src"
-          content={`https://bukinoshita.io/static/cover.png`}
+          content={`https://hackdisrupt.now.sh/static/cover.png`}
         />
 
-        <meta property="og:url" content="https://bukinoshita.io" />
+        <meta property="og:url" content="https://hackdisrupt.now.sh" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="bukinoshita" />
+        <meta property="og:title" content={pkg.name} />
         <meta property="og:image" content="static/cover.png" />
         <meta property="og:description" content={pkg.description} />
-        <meta property="og:site_name" content="bukinoshita" />
+        <meta property="og:site_name" content={pkg.name} />
 
         <link rel="apple-touch-icon" href="/static/icon.png" />
         <link rel="icon" href="/static/icon.png" type="image/png" />
