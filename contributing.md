@@ -5,3 +5,4 @@
 3. Make your changes
 4. Your commit should look like this: [message] ([issue-url]) — eg: `add linter (https://github.com/bukinoshita/hackdisrupt/issues/41)`
 5. Run tests: `yarn test`
+6. Send your [Pull Request](https://help.github.com/articles/creating-a-pull-request/) to the `staging` branch
