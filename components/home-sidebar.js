@@ -47,7 +47,7 @@ const HomeSidebar = () => {
           </li>
 
           <li>
-            <ShareFacebook text={text} />
+            <ShareFacebook />
           </li>
         </ul>
       </footer>

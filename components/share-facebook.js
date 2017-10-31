@@ -6,10 +6,9 @@ import shareFacebook from 'share-facebook'
 
 import { colors } from './../theme'
 
-const ShareFacebook = ({ size, text }) => {
+const ShareFacebook = ({ size }) => {
   const href = shareFacebook({
-    quote: text,
-    url: 'https://hackdisrupt.now.sh',
+    href: 'https://hackdisrupt.now.sh',
     redirect_uri: 'https://hackdisrupt.now.sh', // eslint-disable-line camelcase
     app_id: '1300099820094576' // eslint-disable-line camelcase
   })
@@ -54,8 +53,7 @@ ShareFacebook.defaultProps = {
 }
 
 ShareFacebook.propTypes = {
-  size: PropTypes.string,
-  text: PropTypes.string
+  size: PropTypes.string
 }
 
 export default ShareFacebook

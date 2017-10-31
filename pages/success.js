@@ -100,8 +100,7 @@ class Success extends Component {
 
               <ButtonLink
                 href={shareFacebook({
-                  text,
-                  url,
+                  href: url,
                   redirect_uri: url, // eslint-disable-line camelcase
                   app_id: '1300099820094576' // eslint-disable-line camelcase
                 })}
