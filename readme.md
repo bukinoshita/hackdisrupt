@@ -31,4 +31,11 @@ $ git clone https://github.com/bukinoshita/hackdisrupt.git && cd hackdisrupt && 
 
 Please see our [contributing.md](https://github.com/bukinoshita/hackdisrupt/blob/master/contributing.md).
 
+
+## Sponsors
+
+<a target="_blank" rel="nofollow" href="https://app.codesponsor.io/link/YZd6YRnmvU1pNGKBkRbLtRDf/bukinoshita/hackdisrupt">
+  <img alt="Sponsor" width="888" height="68" src="https://app.codesponsor.io/embed/YZd6YRnmvU1pNGKBkRbLtRDf/bukinoshita/hackdisrupt.svg" />
+</a>
+
 <img src="/design/assets/github-sponsor.png"/>
