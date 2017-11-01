@@ -1,5 +1,7 @@
 'use strict'
 
+import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 
 import Page from './page'
@@ -145,6 +147,12 @@ const Poll = ({ title, description, options }) => {
       `}</style>
     </Page>
   )
+}
+
+Poll.propTypes = {
+  title: PropTypes.string,
+  options: PropTypes.array,
+  description: PropTypes.string
 }
 
 export default Poll

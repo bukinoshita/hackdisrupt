@@ -1,5 +1,7 @@
 'use strict'
 
+import React from 'react'
+
 import Poll from './../../layouts/poll'
 
 export default () => {
