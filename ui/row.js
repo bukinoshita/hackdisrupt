@@ -1,5 +1,8 @@
 'use strict'
 
+import React from 'react'
+import PropTypes from 'prop-types'
+
 const Row = ({ children }) => (
   <div>
     {children}
@@ -15,5 +18,9 @@ const Row = ({ children }) => (
     `}</style>
   </div>
 )
+
+Row.propTypes = {
+  children: PropTypes.node
+}
 
 export default Row

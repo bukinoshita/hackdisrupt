@@ -1,10 +1,14 @@
 'use strict'
 
+import React from 'react'
+import shareTwitter from 'share-twitter'
+import PropTypes from 'prop-types'
+
 import { colors } from './../theme'
 
-const ShareTwitter = ({ size, href }) => {
+const ShareTwitter = ({ size, url, text }) => {
   return (
-    <a href={href}>
+    <a href={shareTwitter({ text, url })}>
       <svg width={size} height={size} viewBox="0 0 23 23">
         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g transform="translate(-915.000000, -547.000000)">
@@ -40,6 +44,12 @@ const ShareTwitter = ({ size, href }) => {
 
 ShareTwitter.defaultProps = {
   size: '30px'
+}
+
+ShareTwitter.propTypes = {
+  size: PropTypes.string,
+  url: PropTypes.string,
+  text: PropTypes.string
 }
 
 export default ShareTwitter

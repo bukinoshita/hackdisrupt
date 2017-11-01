@@ -1,11 +1,16 @@
 'use strict'
 
+import React from 'react'
+
 import { colors, tablet } from './../theme'
 import ShareTwitter from './share-twitter'
 import ShareFacebook from './share-facebook'
 import LanguageAnimation from './language-animation'
 
 const HomeSidebar = () => {
+  const text =
+    'Entrei na lista do hackdisrupt! Aprenda programação com uma experiencia nova.'
+  const url = 'https://hackdisrupt.now.sh'
   const languages = [
     'javascript',
     'go',
@@ -18,7 +23,12 @@ const HomeSidebar = () => {
     'android',
     'react-native',
     'java',
-    'c++'
+    'c++',
+    'php',
+    'graphql',
+    'mongodb',
+    'rails',
+    'postgresql'
   ]
 
   return (
@@ -33,11 +43,11 @@ const HomeSidebar = () => {
 
         <ul>
           <li>
-            <ShareTwitter href="https://bukinoshita.io" />
+            <ShareTwitter url={url} text={text} />
           </li>
 
           <li>
-            <ShareFacebook href="https://bukinoshita.io" />
+            <ShareFacebook />
           </li>
         </ul>
       </footer>

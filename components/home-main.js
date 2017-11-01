@@ -1,14 +1,44 @@
 'use strict'
 
-import Link from 'next/link'
+import React from 'react'
 import { Github } from 'react-feather'
+import PropTypes from 'prop-types'
 
 import { phone } from './../theme'
 import Row from './../ui/row'
-import Button from './../ui/button'
+import ButtonLink from './../ui/button-link'
 import Header from './../components/header'
 
-const HomeMain = () => {
+const HomeMain = ({ count = 0, logged = false }) => {
+  const message = logged ? (
+    <p>
+      > Você já está na lista. Obrigado por fazer parte! Acompanhe a gente no{' '}
+      <a href="https://github.com/bukinoshita/hackdisrupt">Github</a>.
+      <style jsx>{`
+        p {
+          max-width: 400px;
+          line-height: 24px;
+          font-size: 14px;
+          font-style: italic;
+          font-weight: 500;
+          text-transform: lowercase;
+          color: #000;
+        }
+
+        a {
+          color: #000;
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      `}</style>
+    </p>
+  ) : (
+    <ButtonLink href={`${process.env.API_URL}/auth/github`}>
+      <Github style={{ marginRight: '10px' }} size="16" />
+      Entrar na lista beta
+    </ButtonLink>
+  )
+
   return (
     <Row>
       <Header />
@@ -19,15 +49,12 @@ const HomeMain = () => {
             <strong>aprenda</strong>programação
           </h1>
           <h2>
-            mais de <span className="number">4618</span> programadores prontos
-            para aprender.
+            mais de <span className="number">{count}</span> programadores
+            prontos para aprender.
           </h2>
-          <p>aprenda / ensine / forum / trampos / podcasts</p>
+          <p>aprender / ensinar / forum / trampos / podcasts</p>
 
-          <Button>
-            <Github style={{ marginRight: '10px' }} size="16" />
-            Entrar na lista beta
-          </Button>
+          {message}
         </div>
       </div>
 
@@ -101,6 +128,11 @@ const HomeMain = () => {
       `}</style>
     </Row>
   )
+}
+
+HomeMain.propTypes = {
+  count: PropTypes.number,
+  logged: PropTypes.bool
 }
 
 export default HomeMain

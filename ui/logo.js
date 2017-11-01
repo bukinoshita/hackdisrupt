@@ -1,5 +1,8 @@
 'use strict'
 
+import React from 'react'
+import PropTypes from 'prop-types'
+
 import { colors } from './../theme'
 
 const Logo = ({ size }) => {
@@ -30,6 +33,10 @@ const Logo = ({ size }) => {
       </g>
     </svg>
   )
+}
+
+Logo.propTypes = {
+  size: PropTypes.string
 }
 
 export default Logo

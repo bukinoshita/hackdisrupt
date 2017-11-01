@@ -1,8 +1,18 @@
 'use strict'
 
+import React from 'react'
+import PropTypes from 'prop-types'
+import shareFacebook from 'share-facebook'
+
 import { colors } from './../theme'
 
-const ShareFacebook = ({ size, href }) => {
+const ShareFacebook = ({ size }) => {
+  const href = shareFacebook({
+    href: 'https://hackdisrupt.now.sh',
+    redirect_uri: 'https://hackdisrupt.now.sh', // eslint-disable-line camelcase
+    app_id: '1300099820094576' // eslint-disable-line camelcase
+  })
+
   return (
     <a href={href}>
       <svg width={size} height={size} viewBox="0 0 23 23">
@@ -40,6 +50,10 @@ const ShareFacebook = ({ size, href }) => {
 
 ShareFacebook.defaultProps = {
   size: '30px'
+}
+
+ShareFacebook.propTypes = {
+  size: PropTypes.string
 }
 
 export default ShareFacebook
