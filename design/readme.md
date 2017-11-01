@@ -34,7 +34,7 @@ _After running `git pull`, run `yarn pull` to generate a `sketch` file from the 
 
 ### Sketch Cloud
 
-- [web](https://sketch.cloud/s/Omlrp)
+- [web](https://sketch.cloud/s/eKQKq)
 - [ui](https://sketch.cloud/s/m1ev9)
 - [logo](https://sketch.cloud/s/DPJxa)
 
