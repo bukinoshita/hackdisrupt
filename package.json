@@ -66,12 +66,12 @@
       "import/no-unresolved": 0,
       "react/no-unescaped-entities": 0
     },
-    "ignores": ["node_modules"],
+    "ignores": ["node_modules", "static/*.js"],
     "globals": ["document", "fetch"]
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
+      "yarn test",
       "prettier --semi false --single-quote --write",
       "git add"
     ]
