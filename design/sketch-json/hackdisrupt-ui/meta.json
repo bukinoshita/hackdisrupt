@@ -10,6 +10,9 @@
         "8C692EF3-C5A3-4119-9091-4A07EE1F4A78": {
           "name": "buttons\/small\/default"
         },
+        "DC4A25BF-2DA4-431D-A12C-B45DAE1D8CF7": {
+          "name": "logged-out"
+        },
         "49AEDBB5-B4F2-4EE6-A956-DE308F93C286": {
           "name": "buttons\/normal\/with-icon\/front"
         },
@@ -34,8 +37,8 @@
         "72AD6257-2988-4CB2-BFC9-05779B8D4053": {
           "name": "buttons\/normal-with-icon-back\/primary"
         },
-        "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
-          "name": "buttons\/large\/default"
+        "B7D04F47-7744-4A15-BDFF-FE087B81F26A": {
+          "name": "ui\/logo\/white"
         },
         "50C4B052-DFE9-4B27-94B6-A386712F5560": {
           "name": "buttons\/large-with-icon-back\/primary"
@@ -46,17 +49,23 @@
         "12DED205-03D1-4932-B395-9187E02CE9B1": {
           "name": "buttons\/large-with-icon-back\/primary"
         },
+        "4B8E0741-9AED-48D0-83FF-07E3F82A6D0D": {
+          "name": "buttons\/large\/default"
+        },
         "9538B28E-2E6E-4217-8579-88F970E8C9F4": {
           "name": "buttons\/normal\/default"
         },
-        "C6572A67-5658-4BA0-A992-523390DB9B34": {
-          "name": "buttons\/large\/colors\/primary"
+        "747D9962-2BB0-43CF-A5BB-6FA28C567FA8": {
+          "name": "ui\/header"
         },
         "E9CD2CDE-498A-44B1-97EE-D43573C872E9": {
           "name": "buttons\/large\/colors\/primary-hover"
         },
         "80A671AC-6A8D-46F7-951B-1C8064D68603": {
           "name": "buttons\/small\/with-icon\/front"
+        },
+        "C6572A67-5658-4BA0-A992-523390DB9B34": {
+          "name": "buttons\/large\/colors\/primary"
         },
         "BAB1FCEA-9AAB-4DA9-8CC5-EF60508DC404": {
           "name": "buttons\/normal-with-icon-back\/primary-hover"
@@ -67,11 +76,11 @@
         "E7C89EF5-D791-4498-A8ED-3CAA7545CD4F": {
           "name": "icons\/light\/arrow-right"
         },
-        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
-          "name": "buttons\/normal\/colors\/primary"
-        },
         "D41467D3-AD6E-4D81-A8AC-51A416C75B87": {
           "name": "buttons\/small-with-icon-front\/colors\/primary"
+        },
+        "E61627E6-A5DC-4ADB-A586-78F9E132658D": {
+          "name": "buttons\/normal\/colors\/primary"
         },
         "9C509497-992D-47D0-9E0D-69DA65B5A07F": {
           "name": "icons\/js"
@@ -88,11 +97,17 @@
         "7A5686BC-AECD-4436-B42E-50212793D79B": {
           "name": "icons\/light\/refresh-cw"
         },
+        "2B674155-6A18-49A2-82C0-C7703466AA39": {
+          "name": "ui\/logo\/black"
+        },
         "1A5A1442-338E-46F5-9DDE-58CBBE3D84F6": {
           "name": "buttons\/small\/with-icon\/back"
         },
         "2C12898F-7A84-473D-A2E5-E752FECE966F": {
           "name": "buttons\/normal-with-icon-front\/primary-hover"
+        },
+        "C69CB911-3129-4F70-907F-48CF9F1C5D22": {
+          "name": "logged-in"
         },
         "B0A3D705-0E1E-42EF-A99C-56F4738B816C": {
           "name": "buttons\/large-with-icon-front\/primary"
@@ -108,6 +123,9 @@
         },
         "5A47A0DA-5DB3-4E8C-99BA-AA7380BC3E62": {
           "name": "buttons\/small-with-icon-back\/primary-hover"
+        },
+        "84213E85-4500-4B44-8E82-478D52168024": {
+          "name": "icons\/light\/github"
         }
       }
     },
