@@ -8,10 +8,10 @@
           "name": "home"
         },
         "C4E72178-CA22-41A9-818A-3A3C2D098360": {
-          "name": "forum"
+          "name": "forum-category-id"
         },
         "C60ECC48-CB0D-4E89-9103-AE9CAE86E189": {
-          "name": "forum-new"
+          "name": "forum-category-new"
         }
       }
     },
