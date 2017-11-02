@@ -4,10 +4,21 @@
     "zoomValue": 0.01522741980857924
   },
   "398D33A9-727F-4D6E-A122-F1273C5CF22C": {
-    "scrollOrigin": "{-863, 333}",
-    "zoomValue": 0.6611762270378426
+    "scrollOrigin": "{-851, 92}",
+    "zoomValue": 0.4441157717822181
   },
   "3009B39B-9A81-472E-930A-8A0C7244849C": {
-    "pageListHeight": 110
+    "pageListHeight": 110,
+    "exportableLayerSelection": ["D8B8872A-DF26-4E97-B583-650711FE7870", "C60ECC48-CB0D-4E89-9103-AE9CAE86E189"],
+    "cloudShare": {
+      "UserId": "1536B3CB-97D6-423D-BF36-2E3798BBD53D",
+      "commentsEnabled": 0,
+      "id": "20BC8236-6644-4F5F-8256-ED790C78AE03",
+      "publicUrl": "https:\/\/sketch.cloud\/s\/eKQKq",
+      "updatedAt": "2017-11-01T20:58:13.000Z",
+      "createdAt": "2017-11-01T20:57:47.000Z",
+      "isPrivate": 0,
+      "shortId": "eKQKq"
+    }
   }
 }
