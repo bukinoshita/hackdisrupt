@@ -45,8 +45,8 @@ export default () => {
 
   return (
     <Poll
-      title="Qual é o seu editor de texto favorito?"
-      description="Queremos saber qual é o seu editor de texto favorito."
+      title="Qual é o seu editor de texto/IDE favorito?"
+      description="Queremos saber qual é o seu editor de texto/IDE favorito."
       options={options}
     />
   )
