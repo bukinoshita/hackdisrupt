@@ -2,7 +2,8 @@
 
 import React from 'react'
 
-import { colors, tablet } from './../theme'
+import { colors, typography, tablet } from './../theme'
+
 import ShareTwitter from './share-twitter'
 import ShareFacebook from './share-facebook'
 import LanguageAnimation from './language-animation'
@@ -82,19 +83,19 @@ const HomeSidebar = () => {
 
         h2 {
           color: ${colors.white};
-          font-size: 18px;
-          font-weight: 400;
+          font-size: ${typography.f18};
+          font-weight: ${typography.regular};
           line-height: 28px;
         }
 
         strong {
-          font-weight: 600;
+          font-weight: ${typography.semibold};
         }
 
         span {
           color: ${colors.white};
-          font-weight: 300;
-          font-size: 12px;
+          font-weight: ${typography.light};
+          font-size: ${typography.f12};
           margin-bottom: 15px;
           display: block;
         }

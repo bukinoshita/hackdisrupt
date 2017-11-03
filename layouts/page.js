@@ -78,6 +78,12 @@ const Page = ({ children }) => {
 
         <link rel="apple-touch-icon" href="/static/icon.png" />
         <link rel="icon" href="/static/icon.png" type="image/png" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-109136443-1"
+        />
+        <script src="/static/analytics.js" />
       </Head>
 
       {children}

@@ -7,6 +7,7 @@ import Router from 'next/router'
 import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
+import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 
 import Page from './../layouts/page'
 
@@ -15,6 +16,8 @@ import { setToken } from './../services/auth'
 import Row from './../ui/row'
 import Logo from './../ui/logo'
 import ButtonLink from './../ui/button-link'
+
+import { typography, colors } from './../theme'
 
 class Success extends Component {
   static async getInitialProps({ query }) {
@@ -51,10 +54,10 @@ class Success extends Component {
         pessoas que estão na nossa lista beta.
         <style jsx>{`
           p {
-            color: #000;
-            font-size: 14px;
+            color: ${colors.black};
+            font-size: ${typography.f14};
             line-height: 26px;
-            font-weight: 300;
+            font-weight: ${typography.light};
             margin-top: 10px;
             text-transform: lowercase;
           }
@@ -131,8 +134,8 @@ class Success extends Component {
           h1 {
             text-align: center;
             text-transform: uppercase;
-            font-weight: bold;
-            font-size: 16px;
+            font-weight: ${typography.bold};
+            font-size: ${typography.f16};
             margin-top: 100px;
             line-height: 26px;
           }
@@ -140,8 +143,8 @@ class Success extends Component {
           footer {
             text-align: center;
             text-transform: uppercase;
-            font-weight: semibold;
-            font-size: 12px;
+            font-weight: ${typography.semibold};
+            font-size: ${typography.f12};
           }
 
           span {
