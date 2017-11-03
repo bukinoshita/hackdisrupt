@@ -6,6 +6,15 @@
       "artboards": {
         "D8B8872A-DF26-4E97-B583-650711FE7870": {
           "name": "home"
+        },
+        "CCB4384C-6F46-4BEB-B1DF-C9B5591624EA": {
+          "name": "books"
+        },
+        "C60ECC48-CB0D-4E89-9103-AE9CAE86E189": {
+          "name": "forum-category-new"
+        },
+        "C4E72178-CA22-41A9-818A-3A3C2D098360": {
+          "name": "forum-category-id"
         }
       }
     },
