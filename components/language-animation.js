@@ -3,6 +3,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { typography } from './../theme'
+
 const LanguageAnimation = ({ languages }) => {
   const language = languages.map((l, i) => {
     return (
@@ -11,8 +13,8 @@ const LanguageAnimation = ({ languages }) => {
         <style jsx>{`
           .language {
             color: #ababab;
-            font-weight: 300;
-            font-size: 14px;
+            font-weight: ${typography.light};
+            font-size: ${typography.f14};
             margin-top: 15px;
             display: block;
             opacity: 0;
@@ -30,7 +32,7 @@ const LanguageAnimation = ({ languages }) => {
           }
 
           strong {
-            font-weight: 600;
+            font-weight: ${typography.semibold};
           }
 
           @keyframes fade {

@@ -4,7 +4,7 @@ import React from 'react'
 import { Github } from 'react-feather'
 import PropTypes from 'prop-types'
 
-import { phone } from './../theme'
+import { colors, typography, phone } from './../theme'
 import Row from './../ui/row'
 import ButtonLink from './../ui/button-link'
 import Header from './../components/header'
@@ -18,16 +18,16 @@ const HomeMain = ({ count = 0, logged = false }) => {
         p {
           max-width: 400px;
           line-height: 24px;
-          font-size: 14px;
+          font-size: ${typography.f14};
           font-style: italic;
-          font-weight: 500;
+          font-weight: ${typography.medium};
           text-transform: lowercase;
-          color: #000;
+          color: ${colors.black};
         }
 
         a {
-          color: #000;
-          font-weight: 600;
+          color: ${colors.black};
+          font-weight: ${typography.semibold};
           text-decoration: underline;
         }
       `}</style>
@@ -71,25 +71,25 @@ const HomeMain = ({ count = 0, logged = false }) => {
         }
 
         strong {
-          font-weight: 800;
+          font-weight: ${typography.heavy};
           display: block;
         }
 
         .number {
-          font-weight: 600;
+          font-weight: ${typography.semibold};
         }
 
         h2 {
           margin-top: 30px;
           color: #c0c0c0;
-          font-weight: 400;
-          font-size: 18px;
+          font-weight: ${typography.regular};
+          font-size: ${typography.f18};
         }
 
         p {
           color: #c0c0c0;
-          font-weight: 400;
-          font-size: 18px;
+          font-weight: ${typography.regular};
+          font-size: ${typography.f18};
           margin-top: 10px;
           margin-bottom: 50px;
         }
@@ -100,11 +100,11 @@ const HomeMain = ({ count = 0, logged = false }) => {
         }
 
         .footer__link {
-          font-weight: 500;
+          font-weight: ${typography.medium};
           text-transform: lowercase;
-          color: #000;
+          color: ${colors.black};
           cursor: pointer;
-          font-size: 14px;
+          font-size: ${typography.f14};
           opacity: 0.5;
         }
 
@@ -121,7 +121,7 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
           h2,
           p {
-            font-size: 14px;
+            font-size: ${typography.f14};
             line-height: 20px;
           }
         }

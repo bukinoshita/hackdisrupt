@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Page from './page'
 import Row from './../ui/row'
 import Logo from './../ui/logo'
-import { phone } from './../theme'
+import { colors, typography, phone } from './../theme'
 
 const Poll = ({ title, description, options }) => {
   const choices = options.map(({ vote, result, alt }) => {
@@ -105,12 +105,12 @@ const Poll = ({ title, description, options }) => {
           text-align: center;
           text-transform: uppercase;
           font-weight: bold;
-          font-size: 16px;
+          font-size: ${typography.f16};
           margin-top: 100px;
         }
 
         p {
-          color: #000;
+          color: ${colors.black};
           font-size: 14px;
           font-weight: 300;
           margin-top: 10px;
@@ -130,19 +130,19 @@ const Poll = ({ title, description, options }) => {
         }
 
         footer p {
-          font-weight: 400;
+          font-weight: ${typography.regular};
         }
 
         a {
           padding: 0;
           display: inline-block;
           color: #777;
-          font-weight: 500;
+          font-weight: ${typography.medium};
         }
 
         a:hover {
           text-decoration: underline;
-          color: #000;
+          color: ${colors.black};
         }
       `}</style>
     </Page>

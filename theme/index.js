@@ -22,12 +22,15 @@ export const typography = {
   f35: '2.2rem',
   f45: '2.8rem',
   f56: '3.5rem',
+  ultralight: 100,
+  thin: 200,
   light: 300,
   regular: 400,
-  semibold: 500,
+  medium: 500,
+  semibold: 600,
   bold: 700,
-  extrabold: 800,
-  heavy: 900
+  heavy: 800,
+  black: 900
 }
 
 export const tablet = `screen and (max-width: 768px)`
