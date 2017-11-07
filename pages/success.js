@@ -8,6 +8,7 @@ import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
 import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
+import ButtonLink from 'hackdisrupt-ui/build/button-link'
 
 import Page from './../layouts/page'
 
@@ -15,7 +16,6 @@ import { setToken } from './../services/auth'
 
 import Row from './../ui/row'
 import Logo from './../ui/logo'
-import ButtonLink from './../ui/button-link'
 
 import { typography, colors } from './../theme'
 
