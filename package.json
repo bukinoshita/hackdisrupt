@@ -23,10 +23,11 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "axios": "^0.17.0",
     "babel-plugin-inline-dotenv": "^1.1.1",
     "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "classnames": "^2.2.5",
-    "hackdisrupt-ui": "^0.0.1",
+    "hackdisrupt-ui": "^0.0.2",
     "isomorphic-fetch": "^2.2.1",
     "next": "^4.1.3",
     "nprogress": "^0.2.0",
@@ -47,28 +48,46 @@
     "xo": "^0.18.2"
   },
   "babel": {
-    "presets": ["next/babel"],
+    "presets": [
+      "next/babel"
+    ],
     "env": {
       "development": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "staging": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "production": {
-        "plugins": ["transform-inline-environment-variables"]
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
       }
     }
   },
   "xo": {
-    "extends": ["prettier", "prettier/react", "plugin:react/recommended"],
+    "extends": [
+      "prettier",
+      "prettier/react",
+      "plugin:react/recommended"
+    ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
       "react/no-unescaped-entities": 0
     },
-    "ignores": ["node_modules", "static/*.js"],
-    "globals": ["document", "fetch"]
+    "ignores": [
+      "node_modules",
+      "static/*.js"
+    ],
+    "globals": [
+      "document",
+      "fetch"
+    ]
   },
   "lint-staged": {
     "*.js": [

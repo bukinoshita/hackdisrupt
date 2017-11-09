@@ -1,10 +1,16 @@
 'use strict'
 
 export const colors = {
-  white: '#FFFFFF',
+  white: '#ffffff',
   black: '#000000',
-  twitter: '#1DA1F2',
-  facebook: '#4267B2'
+  blackHover: '#212529',
+  twitter: '#1da1f2',
+  twitterHover: '#1a8fd8',
+  facebook: '#4267b2',
+  facebookHover: '#385899',
+  lightSlateGray: '#7e899b',
+  glitter: '#e6edf4',
+  gainsboro: '#dddddd'
 }
 
 export const typography = {

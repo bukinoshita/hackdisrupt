@@ -29,13 +29,12 @@ class Success extends Component {
     })
     const json = await res.json()
 
-    setToken(id)
-
     return { user: json.user }
   }
 
   componentDidMount() {
     const { id } = this.props.url.query
+    setToken(id)
 
     if (!id) {
       return Router.push('/')
