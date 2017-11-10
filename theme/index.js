@@ -10,7 +10,9 @@ export const colors = {
   facebookHover: '#385899',
   lightSlateGray: '#7e899b',
   glitter: '#e6edf4',
-  gainsboro: '#dddddd'
+  gainsboro: '#dddddd',
+  azure: '#33a9ff',
+  silver: '#868e96'
 }
 
 export const typography = {

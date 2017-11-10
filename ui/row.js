@@ -3,13 +3,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Row = ({ children }) => (
+const Row = ({ children, size }) => (
   <div>
     {children}
 
     <style jsx>{`
       div {
-        max-width: 1080px;
+        max-width: ${size};
         margin-left: auto;
         margin-right: auto;
         padding-left: 24px;
@@ -20,7 +20,12 @@ const Row = ({ children }) => (
 )
 
 Row.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  size: PropTypes.string
+}
+
+Row.defaultProps = {
+  size: '1080px'
 }
 
 export default Row

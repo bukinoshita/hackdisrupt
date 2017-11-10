@@ -36,6 +36,7 @@
     "react-cookies": "^0.1.0",
     "react-dom": "^16.0.0",
     "react-feather": "^1.0.7",
+    "react-timeago": "^3.4.3",
     "share-facebook": "^0.0.1",
     "share-twitter": "^0.0.1"
   },

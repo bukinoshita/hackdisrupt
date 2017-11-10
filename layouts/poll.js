@@ -2,40 +2,35 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'next/link'
 
 import Page from './page'
 import Row from './../ui/row'
-import Logo from './../ui/logo'
+import Hero from './../components/hero'
 import { colors, typography, phone } from './../theme'
 
 const Poll = ({ title, description, options }) => {
-  const choices = options.map(({ vote, result, alt }) => {
+  const choices = options.map(({ vote, image, text }) => {
     return (
-      <li key={alt}>
+      <li key={text}>
         <a href={vote}>
-          <img src={result} alt={alt} />
+          <img src={image} alt={text} />
         </a>
 
         <style jsx>{`
           li {
             flex-basis: 48%;
             margin-bottom: 30px;
-            border: 1px solid #eaeaea;
+            border: 1px solid ${colors.glitter};
             transition: 0.2s;
           }
 
           li:hover {
-            border: 1px solid #ccc;
+            border: 1px solid ${colors.gainsboro};
           }
 
           a {
             display: block;
-            padding: 15px 10px 10px;
-          }
-
-          img {
-            max-width: 100%;
+            padding: 10px 5px 5px;
           }
 
           @media ${phone} {
@@ -54,69 +49,22 @@ const Poll = ({ title, description, options }) => {
 
   return (
     <Page>
+      <Hero title={title} subtitle={description} />
+
       <Row>
-        <header>
-          <div className="title">
-            <Link href="/">
-              <span>
-                <Logo size="200px" />
-              </span>
-            </Link>
-
-            <h2>{title}</h2>
-            <p>{description}</p>
-          </div>
-        </header>
-
-        <section>
-          <ul>{choices}</ul>
-        </section>
+        <ul>{choices}</ul>
 
         <footer>
           <p>
             powered by{' '}
-            <a className="link" href="https://github.com/apex/gh-polls">
-              apex/gh-polls
+            <a className="link" href="https://github.com/bukinoshita/gh-polls">
+              gh-polls
             </a>.
           </p>
         </footer>
       </Row>
 
       <style jsx>{`
-        span {
-          cursor: pointer;
-        }
-
-        header {
-          height: 400px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .title {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          max-width: 500px;
-        }
-
-        h2 {
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: ${typography.f16};
-          margin-top: 100px;
-        }
-
-        p {
-          color: ${colors.black};
-          font-size: 14px;
-          font-weight: 300;
-          margin-top: 10px;
-          text-transform: lowercase;
-        }
-
         ul {
           display: flex;
           flex-wrap: wrap;
@@ -131,12 +79,13 @@ const Poll = ({ title, description, options }) => {
 
         footer p {
           font-weight: ${typography.regular};
+          font-size: ${typography.f12};
         }
 
         a {
           padding: 0;
           display: inline-block;
-          color: #777;
+          color: ${colors.silver};
           font-weight: ${typography.medium};
         }
 

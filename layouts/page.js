@@ -107,6 +107,10 @@ const Page = ({ children }) => {
             list-style: none;
           }
 
+          img {
+            max-width: 100%;
+          }
+
           #nprogress {
             pointer-events: none;
           }
@@ -134,6 +138,16 @@ const Page = ({ children }) => {
 
           svg {
             vertical-align: middle;
+          }
+
+          ::-moz-selection {
+            background: ${colors.azure};
+            color: ${colors.white};
+          }
+
+          ::selection {
+            background: ${colors.azure};
+            color: ${colors.white};
           }
         `}
       </style>

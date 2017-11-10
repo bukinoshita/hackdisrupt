@@ -8,6 +8,7 @@ import axios from 'axios'
 import { colors, typography } from './../../theme'
 import Page from './../../layouts/page'
 import Row from './../../ui/row'
+import Hero from './../../components/hero'
 
 class PollNew extends Component {
   constructor() {
@@ -71,14 +72,10 @@ class PollNew extends Component {
 
     return (
       <Page>
-        <section className="hero">
-          <Row>
-            <h2>Votação</h2>
-          </Row>
-        </section>
+        <Hero title="Poll" subtitle="Crie uma poll para votação" />
 
         <section>
-          <Row>
+          <Row size="600px">
             <form onSubmit={this.createPoll}>
               <Input
                 name="title"
@@ -129,20 +126,7 @@ class PollNew extends Component {
         </section>
 
         <style jsx>{`
-          .hero {
-            background-color: ${colors.black};
-            padding-top: 100px;
-            padding-bottom: 100px;
-          }
-
-          .hero h2 {
-            color: ${colors.white};
-            font-size: 60px;
-            text-transform: uppercase;
-          }
-
           form {
-            padding-top: 100px;
             padding-bottom: 100px;
           }
 
