@@ -6,13 +6,14 @@ import PropTypes from 'prop-types'
 import { colors, typography } from './../theme'
 import Row from './../ui/row'
 
-const Hero = ({ title, subtitle }) => {
+const Hero = ({ title, subtitle, children }) => {
   return (
     <section>
       <Row>
         <div>
           <h2>{title}</h2>
           <p>{subtitle}</p>
+          {children}
         </div>
       </Row>
 
@@ -44,6 +45,7 @@ const Hero = ({ title, subtitle }) => {
           font-size: ${typography.f12};
           text-transform: uppercase;
           display: block;
+          margin-bottom: 20px;
         }
       `}</style>
     </section>
@@ -52,7 +54,8 @@ const Hero = ({ title, subtitle }) => {
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
+  children: PropTypes.node
 }
 
 export default Hero

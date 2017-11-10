@@ -29,6 +29,7 @@ class PollPage extends Component {
         title={this.props.poll.title}
         description={this.props.poll.description}
         options={this.props.poll.options}
+        owner={this.props.poll.owner}
       />
     )
   }

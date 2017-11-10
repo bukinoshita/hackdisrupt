@@ -8,7 +8,7 @@ import Row from './../ui/row'
 import Hero from './../components/hero'
 import { colors, typography, phone } from './../theme'
 
-const Poll = ({ title, description, options }) => {
+const Poll = ({ title, description, options, owner }) => {
   const choices = options.map(({ vote, image, text }) => {
     return (
       <li key={text}>
@@ -49,7 +49,14 @@ const Poll = ({ title, description, options }) => {
 
   return (
     <Page>
-      <Hero title={title} subtitle={description} />
+      <Hero title={title} subtitle={description}>
+        <section>
+          <div>
+            <img src={owner.avatar} alt="" />
+            <h3>{owner.name}</h3>
+          </div>
+        </section>
+      </Hero>
 
       <Row>
         <ul>{choices}</ul>
@@ -65,6 +72,29 @@ const Poll = ({ title, description, options }) => {
       </Row>
 
       <style jsx>{`
+        section {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        div img {
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+        }
+
+        div h3 {
+          font-weight: 500;
+          font-size: 14px;
+          margin-left: 8px;
+          color: ${colors.silver};
+        }
+
         ul {
           display: flex;
           flex-wrap: wrap;
@@ -101,7 +131,8 @@ const Poll = ({ title, description, options }) => {
 Poll.propTypes = {
   title: PropTypes.string,
   options: PropTypes.array,
-  description: PropTypes.string
+  description: PropTypes.string,
+  owner: PropTypes.object
 }
 
 export default Poll
