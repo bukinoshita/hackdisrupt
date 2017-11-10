@@ -61,8 +61,10 @@ class PollNew extends Component {
     this.setState({ [name]: value })
   }
 
-  inputChangeOptions() {
+  inputChangeOptions(opt, index) {
     const { options } = this.state
+    const option = opt.target.value
+    options[index].value = option
 
     this.setState({ options })
   }
