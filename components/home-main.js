@@ -57,9 +57,23 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
           {message}
 
-          <Link prefetch href="/polls">
-            polls
-          </Link>
+          <footer>
+            <ul>
+              <li>
+                <a href="https://github.com/bukinoshita/hackdisrupt">
+                  <span>github</span>
+                </a>
+              </li>
+
+              <li>
+                <Link prefetch href="/polls">
+                  <span>polls</span>
+                </Link>
+              </li>
+            </ul>
+
+            <span>made with love</span>
+          </footer>
         </div>
       </div>
 
@@ -68,6 +82,7 @@ const HomeMain = ({ count = 0, logged = false }) => {
           display: flex;
           align-items: center;
           height: calc(100vh - 200px);
+          position: relative;
         }
 
         h1 {
@@ -86,37 +101,49 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
         h2 {
           margin-top: 30px;
-          color: #c0c0c0;
+          color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f18};
+          font-size: ${typography.f14};
         }
 
         p {
-          color: #c0c0c0;
+          color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f18};
+          font-size: ${typography.f14};
           margin-top: 10px;
           margin-bottom: 50px;
         }
 
+        footer {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-text: center;
+          width: 100%;
+        }
+
+        footer span {
+          font-size: ${typography.f12};
+          color: ${colors.gainsboro};
+        }
+
+        li span {
+          color: ${colors.silver};
+          font-size: ${typography.f14};
+          font-weight: ${typography.semibold};
+          cursor: pointer;
+          transition: 0.25s;
+        }
+
         li {
           display: inline-block;
-          margin-right: 20px;
+          margin-right: 30px;
         }
 
-        .footer__link {
-          font-weight: ${typography.medium};
-          text-transform: lowercase;
+        li:hover span {
           color: ${colors.black};
-          cursor: pointer;
-          font-size: ${typography.f14};
-          opacity: 0.5;
-        }
-
-        .footer__link:hover {
           text-decoration: underline;
-          opacity: 1;
-          transition: 0.15s;
         }
 
         @media ${phone} {
@@ -128,6 +155,10 @@ const HomeMain = ({ count = 0, logged = false }) => {
           p {
             font-size: ${typography.f14};
             line-height: 20px;
+          }
+
+          footer {
+            bottom: 25px;
           }
         }
       `}</style>

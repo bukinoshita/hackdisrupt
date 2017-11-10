@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import TimeAgo from 'react-timeago'
 import brazilianStrings from 'react-timeago/lib/language-strings/pt-br'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
-
+import Button from 'hackdisrupt-ui/build/button'
 import { colors, typography } from './../../theme'
 
 import Hero from './../../components/hero'
@@ -51,11 +51,19 @@ class Polls extends Component {
         <Hero title="Polls" subtitle="Crie votações" />
 
         <Row size="600px">
+          <div className="page-title">
+            <h1>Lista</h1>
+
+            <Link href="/p/new">
+              <Button size="small">criar uma poll</Button>
+            </Link>
+          </div>
+
           <ul>
             {this.state.polls.map(poll => {
               return (
                 <li key={poll._id}>
-                  <Link href={`/poll?id=${poll._id}`}>
+                  <Link href={`/poll?id=${poll._id}`} as={`/poll/${poll._id}`}>
                     <div>
                       <h2>{poll.title}</h2>
                       <span>
@@ -97,6 +105,19 @@ class Polls extends Component {
             font-size: 14px;
             margin-top: 5px;
             display: block;
+          }
+
+          .page-title {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid ${colors.glitter};
+            align-items: center;
+          }
+
+          .page-title h1 {
+            font-size: ${typography.f16};
           }
         `}</style>
       </Page>
