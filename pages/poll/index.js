@@ -5,15 +5,12 @@ import PropTypes from 'prop-types'
 
 import Poll from './../../layouts/poll'
 
+import api from './../../services/api'
+
 class PollPage extends Component {
   static async getInitialProps({ query }) {
     try {
-      const res = await fetch(`${process.env.API_URL}/poll/${query.id}`, {
-        headers: {
-          Authorization: process.env.API_TOKEN
-        }
-      })
-      const { poll } = await res.json()
+      const { poll } = await api.get(`/poll/${query.id}`)
 
       return { poll }
     } catch (err) {

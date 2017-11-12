@@ -2,28 +2,23 @@
 
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 
 import Page from './../layouts/page'
 
 import HomeMain from './../components/home-main'
 import HomeSidebar from './../components/home-sidebar'
 
+import api from './../services/api'
+
 class Home extends Component {
   static async getInitialProps() {
     try {
-      const res = await fetch(`${process.env.API_URL}/users`, {
-        headers: {
-          Authorization: process.env.API_TOKEN
-        }
-      })
-      const json = await res.json()
+      const users = await api.get(`${process.env.API_URL}/users`)
 
-      return { users: json }
+      return { users }
     } catch (err) {
       return {
-        users: { count: 0 },
-        logged: false
+        users: { count: 0 }
       }
     }
   }

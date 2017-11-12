@@ -3,13 +3,17 @@
 import React, { Component } from 'react'
 import Input from 'hackdisrupt-ui/build/input'
 import Button from 'hackdisrupt-ui/build/button'
-import axios from 'axios'
-import { colors, typography } from './../../theme'
+
 import Page from './../../layouts/page'
+
 import Row from './../../ui/row'
+
 import Hero from './../../components/hero'
 import Header from './../../components/header'
-import { getCookie } from './../../services/cookies'
+
+import { colors, typography } from './../../theme'
+
+import api from './../../services/api'
 
 class PollNew extends Component {
   constructor() {
@@ -37,7 +41,6 @@ class PollNew extends Component {
   createPoll(event) {
     event.preventDefault()
 
-    const token = getCookie('hackdisrupt')
     const { title, description, options } = this.state
     const data = {
       title,
@@ -45,15 +48,7 @@ class PollNew extends Component {
       options: options.map(option => option.value)
     }
 
-    axios({
-      url: `http://localhost:3001/poll`,
-      method: 'post',
-      headers: {
-        Authorization: `[${process.env.API_TOKEN}, ${token}]`
-      },
-      withCredentials: true,
-      data
-    })
+    api.post('/poll', { data })
   }
 
   inputChange(event) {

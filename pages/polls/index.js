@@ -15,17 +15,14 @@ import Header from './../../components/header'
 import Row from './../../ui/row'
 import Page from './../../layouts/page'
 
+import api from './../../services/api'
+
 class Polls extends Component {
   static async getInitialProps() {
     try {
-      const res = await fetch(`${process.env.API_URL}/polls`, {
-        headers: {
-          Authorization: process.env.API_TOKEN
-        }
-      })
-      const json = await res.json()
+      const polls = await api('/polls')
 
-      return { polls: json }
+      return { polls }
     } catch (err) {
       return {
         polls: { count: 0 }
@@ -50,44 +47,36 @@ class Polls extends Component {
 
     return (
       <Page>
-        <div>
-          <Header />
+        <Header />
 
-          <Hero title="Polls" subtitle="Crie votações" />
+        <Hero title="Polls" subtitle="Crie votações" />
 
-          <Row size="600px">
-            <div className="page-title">
-              <h1>Lista</h1>
+        <Row size="600px">
+          <div className="page-title">
+            <h1>Lista</h1>
 
-              <Link href="/p/new">
-                <Button size="small">criar uma poll</Button>
-              </Link>
-            </div>
+            <Link href="/p/new">
+              <Button size="small">criar uma poll</Button>
+            </Link>
+          </div>
 
-            <ul>
-              {this.state.polls.map(poll => {
-                return (
-                  <li key={poll._id}>
-                    <Link
-                      href={`/poll?id=${poll._id}`}
-                      as={`/poll/${poll._id}`}
-                    >
-                      <div>
-                        <h2>{poll.title}</h2>
-                        <span>
-                          <TimeAgo
-                            date={poll.createdAt}
-                            formatter={formatter}
-                          />
-                        </span>
-                      </div>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </Row>
-        </div>
+          <ul>
+            {this.state.polls.map(poll => {
+              return (
+                <li key={poll._id}>
+                  <Link href={`/poll?id=${poll._id}`} as={`/poll/${poll._id}`}>
+                    <div>
+                      <h2>{poll.title}</h2>
+                      <span>
+                        <TimeAgo date={poll.createdAt} formatter={formatter} />
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </Row>
 
         <style jsx>{`
           ul {

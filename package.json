@@ -28,7 +28,6 @@
     "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "classnames": "^2.2.5",
     "hackdisrupt-ui": "^0.0.2",
-    "isomorphic-fetch": "^2.2.1",
     "next": "^4.1.3",
     "nprogress": "^0.2.0",
     "prop-types": "^15.6.0",
@@ -70,7 +69,7 @@
       "react/no-unescaped-entities": 0
     },
     "ignores": ["node_modules", "static/*.js"],
-    "globals": ["document", "fetch"]
+    "globals": ["document"]
   },
   "lint-staged": {
     "*.js": [

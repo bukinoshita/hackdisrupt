@@ -7,7 +7,6 @@ import Router from 'next/router'
 import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
-import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
 
 import Page from './../layouts/page'
@@ -17,16 +16,13 @@ import Logo from './../ui/logo'
 
 import { typography, colors } from './../theme'
 
+import api from './../services/api'
+
 class Success extends Component {
   static async getInitialProps() {
-    const res = await fetch(`${process.env.API_URL}/account`, {
-      headers: {
-        Authorization: process.env.API_TOKEN
-      }
-    })
-    const json = await res.json()
+    const user = await api.get(`${process.env.API_URL}/account`)
 
-    return { user: json.user }
+    return { user }
   }
 
   componentDidMount() {

@@ -4,9 +4,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Page from './page'
+
 import Row from './../ui/row'
+
 import Hero from './../components/hero'
 import Header from './../components/header'
+
 import { colors, typography, phone } from './../theme'
 
 const Poll = ({ title, description, options, owner }) => {

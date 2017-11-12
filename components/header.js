@@ -4,10 +4,10 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
 import { Github } from 'react-feather'
-import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 
 import Row from './../ui/row'
 import Logo from './../ui/logo'
+
 import { typography } from './../theme'
 
 class Header extends Component {
