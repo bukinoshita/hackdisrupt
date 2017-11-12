@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import Page from './page'
 import Row from './../ui/row'
 import Hero from './../components/hero'
+import Header from './../components/header'
 import { colors, typography, phone } from './../theme'
 
 const Poll = ({ title, description, options, owner }) => {
@@ -49,6 +50,7 @@ const Poll = ({ title, description, options, owner }) => {
 
   return (
     <Page>
+      <Header />
       <Hero title={title} subtitle={description}>
         <section>
           <div>

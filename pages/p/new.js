@@ -4,11 +4,12 @@ import React, { Component } from 'react'
 import Input from 'hackdisrupt-ui/build/input'
 import Button from 'hackdisrupt-ui/build/button'
 import axios from 'axios'
-
 import { colors, typography } from './../../theme'
 import Page from './../../layouts/page'
 import Row from './../../ui/row'
 import Hero from './../../components/hero'
+import Header from './../../components/header'
+import { getCookie } from './../../services/cookies'
 
 class PollNew extends Component {
   constructor() {
@@ -36,6 +37,7 @@ class PollNew extends Component {
   createPoll(event) {
     event.preventDefault()
 
+    const token = getCookie('hackdisrupt')
     const { title, description, options } = this.state
     const data = {
       title,
@@ -44,10 +46,10 @@ class PollNew extends Component {
     }
 
     axios({
-      url: `${process.env.API_URL}/poll`,
+      url: `http://localhost:3001/poll`,
       method: 'post',
       headers: {
-        Authorization: process.env.API_TOKEN
+        Authorization: `[${process.env.API_TOKEN}, ${token}]`
       },
       withCredentials: true,
       data
@@ -74,6 +76,7 @@ class PollNew extends Component {
 
     return (
       <Page>
+        <Header />
         <Hero title="Poll" subtitle="Crie uma poll para votação" />
 
         <section>

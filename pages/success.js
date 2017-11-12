@@ -12,17 +12,14 @@ import ButtonLink from 'hackdisrupt-ui/build/button-link'
 
 import Page from './../layouts/page'
 
-import { setToken } from './../services/auth'
-
 import Row from './../ui/row'
 import Logo from './../ui/logo'
 
 import { typography, colors } from './../theme'
 
 class Success extends Component {
-  static async getInitialProps({ query }) {
-    const id = query.id
-    const res = await fetch(`${process.env.API_URL}/user/${id}`, {
+  static async getInitialProps() {
+    const res = await fetch(`${process.env.API_URL}/account`, {
       headers: {
         Authorization: process.env.API_TOKEN
       }
@@ -34,7 +31,6 @@ class Success extends Component {
 
   componentDidMount() {
     const { id } = this.props.url.query
-    setToken(id)
 
     if (!id) {
       return Router.push('/')

@@ -2,15 +2,15 @@
 
 import cookie from 'react-cookies'
 
-export const getToken = () => {
-  return cookie.load('hackdisrupt')
+export const getCookie = key => {
+  return cookie.load(key)
 }
 
-export const setToken = token => {
+export const setCookie = value => {
   const now = new Date()
   now.setDate(now.getDate() + 14)
 
-  return cookie.save('hackdisrupt', token, {
+  return cookie.save('hackdisrupt', value, {
     expires: now,
     path: '/'
   })
@@ -18,10 +18,4 @@ export const setToken = token => {
 
 export const logout = () => {
   return cookie.remove('hackdisrupt', { path: '/' })
-}
-
-export const isLogged = () => {
-  const token = getToken()
-
-  return Boolean(token)
 }

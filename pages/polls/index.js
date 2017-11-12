@@ -7,9 +7,11 @@ import TimeAgo from 'react-timeago'
 import brazilianStrings from 'react-timeago/lib/language-strings/pt-br'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
 import Button from 'hackdisrupt-ui/build/button'
+
 import { colors, typography } from './../../theme'
 
 import Hero from './../../components/hero'
+import Header from './../../components/header'
 import Row from './../../ui/row'
 import Page from './../../layouts/page'
 
@@ -48,34 +50,44 @@ class Polls extends Component {
 
     return (
       <Page>
-        <Hero title="Polls" subtitle="Crie votações" />
+        <div>
+          <Header />
 
-        <Row size="600px">
-          <div className="page-title">
-            <h1>Lista</h1>
+          <Hero title="Polls" subtitle="Crie votações" />
 
-            <Link href="/p/new">
-              <Button size="small">criar uma poll</Button>
-            </Link>
-          </div>
+          <Row size="600px">
+            <div className="page-title">
+              <h1>Lista</h1>
 
-          <ul>
-            {this.state.polls.map(poll => {
-              return (
-                <li key={poll._id}>
-                  <Link href={`/poll?id=${poll._id}`} as={`/poll/${poll._id}`}>
-                    <div>
-                      <h2>{poll.title}</h2>
-                      <span>
-                        <TimeAgo date={poll.createdAt} formatter={formatter} />
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </Row>
+              <Link href="/p/new">
+                <Button size="small">criar uma poll</Button>
+              </Link>
+            </div>
+
+            <ul>
+              {this.state.polls.map(poll => {
+                return (
+                  <li key={poll._id}>
+                    <Link
+                      href={`/poll?id=${poll._id}`}
+                      as={`/poll/${poll._id}`}
+                    >
+                      <div>
+                        <h2>{poll.title}</h2>
+                        <span>
+                          <TimeAgo
+                            date={poll.createdAt}
+                            formatter={formatter}
+                          />
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </Row>
+        </div>
 
         <style jsx>{`
           ul {

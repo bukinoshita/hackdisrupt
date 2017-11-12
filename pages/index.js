@@ -6,8 +6,6 @@ import 'isomorphic-fetch' // eslint-disable-line import/no-unassigned-import
 
 import Page from './../layouts/page'
 
-import { isLogged } from './../services/auth'
-
 import HomeMain from './../components/home-main'
 import HomeSidebar from './../components/home-sidebar'
 
@@ -20,9 +18,8 @@ class Home extends Component {
         }
       })
       const json = await res.json()
-      const logged = isLogged()
 
-      return { users: json, logged }
+      return { users: json }
     } catch (err) {
       return {
         users: { count: 0 },
@@ -32,12 +29,12 @@ class Home extends Component {
   }
 
   render() {
-    const { users, logged } = this.props
+    const { users } = this.props
 
     return (
       <Page>
         <section>
-          <HomeMain count={users.count} logged={logged} />
+          <HomeMain count={users.count} />
           <HomeSidebar />
         </section>
 

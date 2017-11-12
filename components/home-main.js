@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import { colors, typography, phone } from './../theme'
 import Row from './../ui/row'
-import Header from './../components/header'
 
 const HomeMain = ({ count = 0, logged = false }) => {
   const message = logged ? (
@@ -42,8 +41,6 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
   return (
     <Row>
-      <Header />
-
       <div className="hero">
         <div className="hero-content">
           <h1>
