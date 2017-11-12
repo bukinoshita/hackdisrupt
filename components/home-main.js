@@ -100,13 +100,13 @@ const HomeMain = ({ count = 0, logged = false }) => {
           margin-top: 30px;
           color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f14};
+          font-size: ${typography.f16};
         }
 
         p {
           color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f14};
+          font-size: ${typography.f16};
           margin-top: 10px;
           margin-bottom: 50px;
         }
@@ -136,11 +136,30 @@ const HomeMain = ({ count = 0, logged = false }) => {
         li {
           display: inline-block;
           margin-right: 30px;
+          position: relative;
+        }
+
+        li span:after {
+          content: '';
+          height: 1px;
+          background: ${colors.black};
+          position: absolute;
+          pointer-events: none;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          transform: scale(0, 1);
+          transition: all 200ms;
         }
 
         li:hover span {
           color: ${colors.black};
-          text-decoration: underline;
+        }
+
+        li:hover span:after {
+          opacity: 1;
+          transform: scale(1, 1);
         }
 
         @media ${phone} {

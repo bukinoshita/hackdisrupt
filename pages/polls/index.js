@@ -104,7 +104,7 @@ class Polls extends Component {
             color: ${colors.black};
           }
 
-          div {
+          li div {
             cursor: pointer;
           }
 
