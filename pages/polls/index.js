@@ -21,8 +21,9 @@ class Polls extends Component {
   static async getInitialProps() {
     try {
       const polls = await api('/polls')
+      const account = await api('/account')
 
-      return { polls }
+      return { polls, account }
     } catch (err) {
       return {
         polls: { count: 0 }
@@ -39,75 +40,142 @@ class Polls extends Component {
   }
 
   componentDidMount() {
-    this.setState({ polls: this.props.polls.polls })
+    const { polls } = this.props.polls
+
+    this.setState({ polls })
   }
 
   render() {
     const formatter = buildFormatter(brazilianStrings)
+    const { polls } = this.state
+    const { account } = this.props
+    const createNewBtn = account.user.owner ? (
+      <Link href="/p/new">
+        <Button size="small">criar uma poll</Button>
+      </Link>
+    ) : (
+      undefined
+    )
+
+    const list = polls ? (
+      polls.map(({ _id, owner, createdAt, title, description }) => {
+        return (
+          <li key={_id}>
+            <Link href={`/poll?id=${_id}`} as={`/poll/${_id}`}>
+              <div className="item">
+                <span className="item-owner">{owner.name.charAt(0)}</span>
+
+                <div className="item-info">
+                  <h2>{title}</h2>
+                  <span>
+                    <TimeAgo date={createdAt} formatter={formatter} />
+                  </span>
+                </div>
+
+                <p className="item-description">{description}</p>
+              </div>
+            </Link>
+
+            <style jsx>{`
+              li {
+                transition: 0.25s;
+                transform: scale(1);
+              }
+
+              li:hover {
+                transform: scale(1.035);
+              }
+
+              .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+                min-height: 50px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid ${colors.glitter};
+              }
+
+              .item-owner {
+                background-color: ${colors.black};
+                min-width: 50px;
+                height: 50px;
+                border-radius: 4px;
+                color: ${colors.white};
+                text-align: center;
+                line-height: 50px;
+                font-weight: ${typography.bold};
+                font-size: ${typography.f20};
+                flex-basis: 5%;
+              }
+
+              .item-info {
+                flex-basis: 30%;
+              }
+
+              .item-info h2 {
+                color: ${colors.black};
+                font-size: ${typography.f16};
+                font-weight: ${typography.bold};
+                line-height: 26px;
+              }
+
+              .item-info span {
+                font-size: ${typography.f14};
+                font-weight: ${typography.semibold};
+                color: ${colors.silver};
+              }
+
+              .item-description {
+                flex-basis: 40%;
+                font-size: ${typography.f14};
+                line-height: 26px;
+                color: ${colors.silver};
+              }
+
+              .item-actions {
+                flex-basis: 10%;
+                text-align: right;
+              }
+            `}</style>
+          </li>
+        )
+      })
+    ) : (
+      <h2>
+        não tem nenhuma `poll` criada.
+        <style jsx>{`
+          h2 {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            color: ${colors.silver};
+            font-size: ${typography.f16};
+            font-weight: ${typography.semibold};
+          }
+        `}</style>
+      </h2>
+    )
 
     return (
       <Page>
-        <Header />
+        <Header account={account} />
 
         <Hero title="Polls" subtitle="Crie votações" />
 
-        <Row size="600px">
+        <Row>
           <div className="page-title">
-            <h1>Lista</h1>
+            <h2>Lista</h2>
 
-            <Link href="/p/new">
-              <Button size="small">criar uma poll</Button>
-            </Link>
+            {createNewBtn}
           </div>
 
-          <ul>
-            {this.state.polls.map(poll => {
-              return (
-                <li key={poll._id}>
-                  <Link href={`/poll?id=${poll._id}`} as={`/poll/${poll._id}`}>
-                    <div>
-                      <h2>{poll.title}</h2>
-                      <span>
-                        <TimeAgo date={poll.createdAt} formatter={formatter} />
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+          <ul>{list}</ul>
         </Row>
 
         <style jsx>{`
-          ul {
-            padding-bottom: 100px;
-          }
-
-          li {
-            margin-bottom: 50px;
-            color: ${colors.silver};
-            transition: 0.25s;
-          }
-
-          li:hover {
-            color: ${colors.black};
-          }
-
-          li div {
-            cursor: pointer;
-          }
-
-          h2 {
-            font-size: ${typography.f20};
-            font-weight: ${typography.bold};
-          }
-
-          span {
-            font-size: 14px;
-            margin-top: 5px;
-            display: block;
-          }
-
           .page-title {
             display: flex;
             justify-content: space-between;
@@ -117,8 +185,12 @@ class Polls extends Component {
             align-items: center;
           }
 
-          .page-title h1 {
+          .page-title h2 {
             font-size: ${typography.f16};
+          }
+
+          ul {
+            padding-bottom: 100px;
           }
         `}</style>
       </Page>
@@ -127,7 +199,8 @@ class Polls extends Component {
 }
 
 Polls.propTypes = {
-  polls: PropTypes.object
+  polls: PropTypes.object,
+  account: PropTypes.object
 }
 
 export default Polls

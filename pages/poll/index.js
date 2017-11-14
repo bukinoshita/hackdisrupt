@@ -10,9 +10,12 @@ import api from './../../services/api'
 class PollPage extends Component {
   static async getInitialProps({ query }) {
     try {
-      const { poll } = await api.get(`/poll/${query.id}`)
+      const [{ poll }, account] = await Promise.all([
+        api.get(`/poll/${query.id}`),
+        api.get('/account')
+      ])
 
-      return { poll }
+      return { poll, account }
     } catch (err) {
       return {
         poll: {}
@@ -21,19 +24,23 @@ class PollPage extends Component {
   }
 
   render() {
+    const { poll, account } = this.props
+
     return (
       <Poll
-        title={this.props.poll.title}
-        description={this.props.poll.description}
-        options={this.props.poll.options}
-        owner={this.props.poll.owner}
+        title={poll.title}
+        description={poll.description}
+        options={poll.options}
+        owner={poll.owner}
+        account={account}
       />
     )
   }
 }
 
 PollPage.propTypes = {
-  poll: PropTypes.object
+  poll: PropTypes.object,
+  account: PropTypes.object
 }
 
 export default PollPage

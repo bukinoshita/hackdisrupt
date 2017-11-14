@@ -8,6 +8,7 @@ import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
+import ls from 'local-storage'
 
 import Page from './../layouts/page'
 
@@ -19,16 +20,19 @@ import { typography, colors } from './../theme'
 import api from './../services/api'
 
 class Success extends Component {
-  static async getInitialProps() {
-    const user = await api.get(`${process.env.API_URL}/account`)
+  constructor() {
+    super()
 
-    return { user }
+    this.state = { user: {} }
   }
 
   componentDidMount() {
-    const { id } = this.props.url.query
+    const { token } = this.props.url.query
 
-    if (!id) {
+    api.get('/account').then(({ user }) => this.setState({ user }))
+    ls.set('hackdisrupt', token)
+
+    if (!token) {
       return Router.push('/')
     }
   }
@@ -37,8 +41,7 @@ class Success extends Component {
     const text =
       'Entrei na lista do hackdisrupt! Aprenda programação com uma experiencia nova.'
     const url = 'https://hackdisrupt.now.sh'
-
-    const { name, username } = this.props.user
+    const { displayName, username } = this.state.user
     const description = username ? (
       <p>
         Obrigado por fazer parte! Estamos liberando convites aos poucos para as
@@ -68,7 +71,7 @@ class Success extends Component {
                   <Logo size="200px" />
                 </span>
               </Link>
-              <h1>{name}</h1>
+              <h1>{displayName}</h1>
               {description}
             </div>
           </header>

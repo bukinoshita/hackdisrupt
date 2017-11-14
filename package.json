@@ -48,28 +48,45 @@
     "xo": "^0.18.2"
   },
   "babel": {
-    "presets": ["next/babel"],
+    "presets": [
+      "next/babel"
+    ],
     "env": {
       "development": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "staging": {
-        "plugins": ["inline-dotenv"]
+        "plugins": [
+          "inline-dotenv"
+        ]
       },
       "production": {
-        "plugins": ["transform-inline-environment-variables"]
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
       }
     }
   },
   "xo": {
-    "extends": ["prettier", "prettier/react", "plugin:react/recommended"],
+    "extends": [
+      "prettier",
+      "prettier/react",
+      "plugin:react/recommended"
+    ],
     "rules": {
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
       "react/no-unescaped-entities": 0
     },
-    "ignores": ["node_modules", "static/*.js"],
-    "globals": ["document"]
+    "ignores": [
+      "node_modules",
+      "static/*.js"
+    ],
+    "globals": [
+      "document"
+    ]
   },
   "lint-staged": {
     "*.js": [

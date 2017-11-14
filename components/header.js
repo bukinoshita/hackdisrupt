@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
 import { Github } from 'react-feather'
+import PropTypes from 'prop-types'
 
 import Row from './../ui/row'
 import Logo from './../ui/logo'
@@ -18,20 +19,24 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    this.setState({ isLogged: true })
+    const { account: { user } } = this.props
+
+    if (user.displayName) {
+      return this.setState({ isLogged: true })
+    }
+
+    this.setState({ isLogged: false })
   }
 
   render() {
     const { isLogged } = this.state
+    const { account: { user: { photos, displayName } } } = this.props
 
     const logged = isLogged ? (
       <div>
-        <img
-          src="https://pbs.twimg.com/profile_images/917531117607112706/_FoaCpJG_400x400.jpg"
-          alt=""
-        />
+        <img src={photos[0].value} alt={displayName} />
 
-        <span>Bu Kinoshita</span>
+        <span>{displayName}</span>
 
         <style jsx>{`
           div {
@@ -42,7 +47,7 @@ class Header extends Component {
           img {
             width: 30px;
             height: 30px;
-            border-radius: 3px;
+            border-radius: 4px;
           }
 
           span {
@@ -89,6 +94,10 @@ class Header extends Component {
       </header>
     )
   }
+}
+
+Header.propTypes = {
+  account: PropTypes.object
 }
 
 export default Header

@@ -12,7 +12,7 @@ import Header from './../components/header'
 
 import { colors, typography, phone } from './../theme'
 
-const Poll = ({ title, description, options, owner }) => {
+const Poll = ({ title, description, options, owner, account }) => {
   const choices = options.map(({ vote, image, text }) => {
     return (
       <li key={text}>
@@ -53,7 +53,8 @@ const Poll = ({ title, description, options, owner }) => {
 
   return (
     <Page>
-      <Header />
+      <Header account={account} />
+
       <Hero title={title} subtitle={description}>
         <section>
           <div>
@@ -137,7 +138,8 @@ Poll.propTypes = {
   title: PropTypes.string,
   options: PropTypes.array,
   description: PropTypes.string,
-  owner: PropTypes.object
+  owner: PropTypes.object,
+  account: PropTypes.object
 }
 
 export default Poll

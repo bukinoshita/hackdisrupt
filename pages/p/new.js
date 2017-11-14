@@ -3,6 +3,7 @@
 import React, { Component } from 'react'
 import Input from 'hackdisrupt-ui/build/input'
 import Button from 'hackdisrupt-ui/build/button'
+import PropTypes from 'prop-types'
 
 import Page from './../../layouts/page'
 
@@ -16,6 +17,12 @@ import { colors, typography } from './../../theme'
 import api from './../../services/api'
 
 class PollNew extends Component {
+  static async getInitialProps() {
+    const account = await api.get('/account')
+
+    return { account }
+  }
+
   constructor() {
     super()
 
@@ -67,11 +74,13 @@ class PollNew extends Component {
   }
 
   render() {
+    const { account } = this.props
     const { options } = this.state
 
     return (
       <Page>
-        <Header />
+        <Header account={account} />
+
         <Hero title="Poll" subtitle="Crie uma poll para votação" />
 
         <section>
@@ -160,6 +169,10 @@ class PollNew extends Component {
       </Page>
     )
   }
+}
+
+PollNew.propTypes = {
+  account: PropTypes.object
 }
 
 export default PollNew
