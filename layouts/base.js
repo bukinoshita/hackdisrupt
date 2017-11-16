@@ -29,15 +29,15 @@ class Base extends Component {
     const { children } = this.props
     const { account, fetched } = this.state
 
-    const header = fetched ? <Header account={account} /> : null
-
-    return (
-      <section>
-        {header}
+    const header = fetched ? (
+      <div>
+        <Header account={account} />
 
         {children}
-      </section>
-    )
+      </div>
+    ) : null
+
+    return <section>{header}</section>
   }
 }
 

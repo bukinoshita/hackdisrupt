@@ -11,7 +11,7 @@ import api from './../../services/api'
 class PollPage extends Component {
   static async getInitialProps({ query }) {
     try {
-      const [{ poll }] = await Promise.all([api.get(`/poll/${query.id}`)])
+      const { poll } = await api.get(`/poll/${query.id}`)
 
       return { poll }
     } catch (err) {

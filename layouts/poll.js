@@ -11,44 +11,47 @@ import Hero from './../components/hero'
 
 import { colors, typography, phone } from './../theme'
 
-const Poll = ({ title, description, options, owner }) => {
-  const choices = options.map(({ vote, image, text }) => {
-    return (
-      <li key={text}>
-        <a href={vote}>
-          <img src={image} alt={text} />
-        </a>
+const Poll = ({ title, description, options = [], owner }) => {
+  const choices =
+    options.length > 0
+      ? options.map(({ vote, image, text }) => {
+          return (
+            <li key={text}>
+              <a href={vote}>
+                <img src={image} alt={text} />
+              </a>
 
-        <style jsx>{`
-          li {
-            flex-basis: 48%;
-            margin-bottom: 30px;
-            border: 1px solid ${colors.glitter};
-            transition: 0.2s;
-          }
+              <style jsx>{`
+                li {
+                  flex-basis: 48%;
+                  margin-bottom: 30px;
+                  border: 1px solid ${colors.glitter};
+                  transition: 0.2s;
+                }
 
-          li:hover {
-            border: 1px solid ${colors.gainsboro};
-          }
+                li:hover {
+                  border: 1px solid ${colors.gainsboro};
+                }
 
-          a {
-            display: block;
-            padding: 10px 5px 5px;
-          }
+                a {
+                  display: block;
+                  padding: 10px 5px 5px;
+                }
 
-          @media ${phone} {
-            li {
-              flex-basis: 100%;
-            }
+                @media ${phone} {
+                  li {
+                    flex-basis: 100%;
+                  }
 
-            img {
-              width: 100%;
-            }
-          }
-        `}</style>
-      </li>
-    )
-  })
+                  img {
+                    width: 100%;
+                  }
+                }
+              `}</style>
+            </li>
+          )
+        })
+      : null
 
   return (
     <Page>

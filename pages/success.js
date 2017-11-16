@@ -28,19 +28,20 @@ class Success extends Component {
   componentDidMount() {
     const { token } = this.props.url.query
 
-    api.get('/account').then(({ user }) => this.setState({ user }))
-    setCookie(token)
+    if (token) {
+      setCookie(token)
 
-    if (!token) {
-      return Router.push('/')
+      return api.get('/account').then(({ user }) => this.setState({ user }))
     }
+
+    return Router.push('/')
   }
 
   render() {
     const text =
       'Entrei na lista do hackdisrupt! Aprenda programação com uma experiencia nova.'
     const url = 'https://hackdisrupt.now.sh'
-    const { displayName, username } = this.state.user
+    const { name, username } = this.state.user
     const description = username ? (
       <p>
         Obrigado por fazer parte! Estamos liberando convites aos poucos para as
@@ -70,7 +71,7 @@ class Success extends Component {
                   <Logo size="200px" />
                 </span>
               </Link>
-              <h1>{displayName}</h1>
+              <h1>{name}</h1>
               {description}
             </div>
           </header>

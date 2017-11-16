@@ -5,7 +5,6 @@ import axios from 'axios'
 import { getCookie } from './cookies'
 
 const apiUrl = process.env.API_URL
-const token = process.env.API_TOKEN
 
 const api = axios.create({
   baseURL: apiUrl,
@@ -20,8 +19,6 @@ api.interceptors.request.use(config => {
 
   if (accessToken) {
     config.headers.authorization = accessToken
-  } else {
-    config.headers.authorization = token
   }
 
   return config

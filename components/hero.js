@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { colors, typography } from './../theme'
+import { colors, typography, phone } from './../theme'
 import Row from './../ui/row'
 
 const Hero = ({ title, subtitle, children }) => {
@@ -46,6 +46,12 @@ const Hero = ({ title, subtitle, children }) => {
           text-transform: uppercase;
           display: block;
           margin-bottom: 20px;
+        }
+
+        @media ${phone} {
+          section {
+            height: 250px;
+          }
         }
       `}</style>
     </section>
