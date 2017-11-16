@@ -8,8 +8,6 @@ import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
-import ls from 'local-storage'
-
 import Page from './../layouts/page'
 
 import Row from './../ui/row'
@@ -18,6 +16,7 @@ import Logo from './../ui/logo'
 import { typography, colors } from './../theme'
 
 import api from './../services/api'
+import { setCookie } from './../services/cookies'
 
 class Success extends Component {
   constructor() {
@@ -30,7 +29,7 @@ class Success extends Component {
     const { token } = this.props.url.query
 
     api.get('/account').then(({ user }) => this.setState({ user }))
-    ls.set('hackdisrupt', token)
+    setCookie(token)
 
     if (!token) {
       return Router.push('/')

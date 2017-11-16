@@ -11,24 +11,30 @@ import Button from 'hackdisrupt-ui/build/button'
 import { colors, typography } from './../../theme'
 
 import Hero from './../../components/hero'
-import Header from './../../components/header'
 import Row from './../../ui/row'
 import Page from './../../layouts/page'
+import Base from './../../layouts/base'
 
 import api from './../../services/api'
+import { getCookie } from './../../services/cookies'
 
 class Polls extends Component {
   static async getInitialProps() {
     try {
       const polls = await api('/polls')
-      const account = await api('/account')
 
-      return { polls, account }
+      return { polls }
     } catch (err) {
       return {
         polls: { count: 0 }
       }
     }
+  }
+
+  componentDidMount() {
+    const { polls } = this.props.polls
+
+    this.setState({ polls })
   }
 
   constructor() {
@@ -39,17 +45,12 @@ class Polls extends Component {
     }
   }
 
-  componentDidMount() {
-    const { polls } = this.props.polls
-
-    this.setState({ polls })
-  }
-
   render() {
     const formatter = buildFormatter(brazilianStrings)
     const { polls } = this.state
-    const { account } = this.props
-    const createNewBtn = account.user.owner ? (
+    const token = getCookie('hackdisrupt')
+
+    const createNewBtn = token ? (
       <Link href="/p/new">
         <Button size="small">criar uma poll</Button>
       </Link>
@@ -161,38 +162,38 @@ class Polls extends Component {
 
     return (
       <Page>
-        <Header account={account} />
+        <Base>
+          <Hero title="Polls" subtitle="Crie votações" />
 
-        <Hero title="Polls" subtitle="Crie votações" />
+          <Row>
+            <div className="page-title">
+              <h2>Lista</h2>
 
-        <Row>
-          <div className="page-title">
-            <h2>Lista</h2>
+              {createNewBtn}
+            </div>
 
-            {createNewBtn}
-          </div>
+            <ul>{list}</ul>
+          </Row>
 
-          <ul>{list}</ul>
-        </Row>
+          <style jsx>{`
+            .page-title {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 20px;
+              margin-bottom: 30px;
+              border-bottom: 1px solid ${colors.glitter};
+              align-items: center;
+            }
 
-        <style jsx>{`
-          .page-title {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid ${colors.glitter};
-            align-items: center;
-          }
+            .page-title h2 {
+              font-size: ${typography.f16};
+            }
 
-          .page-title h2 {
-            font-size: ${typography.f16};
-          }
-
-          ul {
-            padding-bottom: 100px;
-          }
-        `}</style>
+            ul {
+              padding-bottom: 100px;
+            }
+          `}</style>
+        </Base>
       </Page>
     )
   }

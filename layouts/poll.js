@@ -8,11 +8,10 @@ import Page from './page'
 import Row from './../ui/row'
 
 import Hero from './../components/hero'
-import Header from './../components/header'
 
 import { colors, typography, phone } from './../theme'
 
-const Poll = ({ title, description, options, owner, account }) => {
+const Poll = ({ title, description, options, owner }) => {
   const choices = options.map(({ vote, image, text }) => {
     return (
       <li key={text}>
@@ -53,8 +52,6 @@ const Poll = ({ title, description, options, owner, account }) => {
 
   return (
     <Page>
-      <Header account={account} />
-
       <Hero title={title} subtitle={description}>
         <section>
           <div>
@@ -138,8 +135,7 @@ Poll.propTypes = {
   title: PropTypes.string,
   options: PropTypes.array,
   description: PropTypes.string,
-  owner: PropTypes.object,
-  account: PropTypes.object
+  owner: PropTypes.object
 }
 
 export default Poll

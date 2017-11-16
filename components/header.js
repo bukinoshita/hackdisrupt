@@ -19,9 +19,9 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    const { account: { user } } = this.props
+    const { account } = this.props
 
-    if (user.displayName) {
+    if (account.name) {
       return this.setState({ isLogged: true })
     }
 
@@ -30,13 +30,13 @@ class Header extends Component {
 
   render() {
     const { isLogged } = this.state
-    const { account: { user: { photos, displayName } } } = this.props
+    const { account } = this.props
 
     const logged = isLogged ? (
       <div>
-        <img src={photos[0].value} alt={displayName} />
+        <img src={account.avatar} alt={account.name} />
 
-        <span>{displayName}</span>
+        <span>{account.name}</span>
 
         <style jsx>{`
           div {

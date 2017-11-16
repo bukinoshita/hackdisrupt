@@ -4,18 +4,16 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import Poll from './../../layouts/poll'
+import Base from './../../layouts/base'
 
 import api from './../../services/api'
 
 class PollPage extends Component {
   static async getInitialProps({ query }) {
     try {
-      const [{ poll }, account] = await Promise.all([
-        api.get(`/poll/${query.id}`),
-        api.get('/account')
-      ])
+      const [{ poll }] = await Promise.all([api.get(`/poll/${query.id}`)])
 
-      return { poll, account }
+      return { poll }
     } catch (err) {
       return {
         poll: {}
@@ -24,16 +22,17 @@ class PollPage extends Component {
   }
 
   render() {
-    const { poll, account } = this.props
+    const { poll } = this.props
 
     return (
-      <Poll
-        title={poll.title}
-        description={poll.description}
-        options={poll.options}
-        owner={poll.owner}
-        account={account}
-      />
+      <Base>
+        <Poll
+          title={poll.title}
+          description={poll.description}
+          options={poll.options}
+          owner={poll.owner}
+        />
+      </Base>
     )
   }
 }

@@ -8,6 +8,8 @@ import Page from './../layouts/page'
 import HomeMain from './../components/home-main'
 import HomeSidebar from './../components/home-sidebar'
 
+import { getCookie } from './../services/cookies'
+
 import api from './../services/api'
 
 class Home extends Component {
@@ -25,11 +27,12 @@ class Home extends Component {
 
   render() {
     const { users } = this.props
+    const isLogged = getCookie('hackdisrupt')
 
     return (
       <Page>
         <section>
-          <HomeMain count={users.count} />
+          <HomeMain count={users.count} logged={Boolean(isLogged)} />
           <HomeSidebar />
         </section>
 
