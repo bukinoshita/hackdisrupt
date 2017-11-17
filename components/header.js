@@ -3,19 +3,24 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import ButtonLink from 'hackdisrupt-ui/build/button-link'
-import { Github } from 'react-feather'
+import { Github, Menu } from 'react-feather'
 import PropTypes from 'prop-types'
+import ClickOutside from 'react-click-outside'
+import classnames from 'classnames'
 
 import Row from './../ui/row'
 import Logo from './../ui/logo'
 
-import { colors, typography } from './../theme'
+import { colors, typography, phone } from './../theme'
 
 class Header extends Component {
   constructor() {
     super()
 
-    this.state = { isLogged: false }
+    this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.handleOpenMenu = this.handleOpenMenu.bind(this)
+
+    this.state = { isLogged: false, isOpen: false }
   }
 
   componentDidMount() {
@@ -28,9 +33,21 @@ class Header extends Component {
     this.setState({ isLogged: false })
   }
 
+  handleClickOutside() {
+    this.setState({ isOpen: false })
+  }
+
+  handleOpenMenu() {
+    this.setState({ isOpen: true })
+  }
+
   render() {
-    const { isLogged } = this.state
+    const { isLogged, isOpen } = this.state
     const { account } = this.props
+    const mobileMenuClass = classnames({
+      'is-open': isOpen,
+      fade: true
+    })
 
     const logged = isLogged ? (
       <div>
@@ -58,7 +75,10 @@ class Header extends Component {
         `}</style>
       </div>
     ) : (
-      <ButtonLink size="small" href={`${process.env.API_URL}/auth/github`}>
+      <ButtonLink
+        size={isOpen ? 'large block' : 'small'}
+        href={`${process.env.API_URL}/auth/github`}
+      >
         <Github style={{ marginRight: '10px' }} size="16" />
         Entrar com GitHub
       </ButtonLink>
@@ -85,6 +105,34 @@ class Header extends Component {
             </nav>
 
             {logged}
+          </div>
+
+          <div className="mobile-menu">
+            <Link prefetch href="/">
+              <span>
+                <Logo size="130px" />
+              </span>
+            </Link>
+
+            <nav className="nav-mobile">
+              <span onClick={this.handleOpenMenu}>
+                <Menu />
+              </span>
+
+              <div className={mobileMenuClass}>
+                <ClickOutside onClickOutside={this.handleClickOutside}>
+                  <ul>
+                    <li>
+                      <Link prefetch href="/polls">
+                        <span>polls</span>
+                      </Link>
+                    </li>
+
+                    <li>{logged}</li>
+                  </ul>
+                </ClickOutside>
+              </div>
+            </nav>
           </div>
         </Row>
 
@@ -133,6 +181,57 @@ class Header extends Component {
 
           span {
             cursor: pointer;
+          }
+
+          .mobile-menu {
+            display: none;
+          }
+
+          .fade {
+            background-color: rgba(0, 0, 0, 0.75);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            display: none;
+          }
+
+          .fade ul {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 3;
+            background-color: ${colors.white};
+            margin-left: 0;
+            padding: 25px;
+            box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+          }
+
+          .fade li {
+            text-align: center;
+            width: 100%;
+          }
+
+          .fade span {
+            display: block;
+          }
+
+          .is-open {
+            display: block;
+          }
+
+          @media ${phone} {
+            div {
+              display: none;
+            }
+
+            .mobile-menu {
+              display: flex;
+            }
           }
         `}</style>
       </header>
