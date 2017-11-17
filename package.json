@@ -80,11 +80,11 @@
     ]
   },
   "now": {
-    "name": "hackdisrupt-staging",
-    "alias": "hackdisrupt-staging",
+    "name": "hackdisrupt",
+    "alias": "hackdisrupt",
     "env": {
-      "NODE_ENV": "staging"
+      "NODE_ENV": "production"
     },
-    "dotenv": ".env"
+    "dotenv": ".env.production"
   }
 }

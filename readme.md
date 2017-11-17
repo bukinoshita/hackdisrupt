@@ -20,7 +20,7 @@ To run it locally on your own computer:
 - Create `.env` file on the root and set `API_URL=https://hackdisrupt-api-staging.now.sh`
 - Run the project
 - Open your browser on https://localhost:3000
-- Check our [API](https://github.com/bukinoshita/hackdisrupt-api)
+- Check our [API](https://github.com/bukinoshita/hackdisrupt-api) (private)
 
 ```bash
 $ git clone https://github.com/bukinoshita/hackdisrupt.git && cd hackdisrupt && yarn && echo 'API_URL=https://hackdisrupt-api-staging.now.sh' > .env && yarn dev
