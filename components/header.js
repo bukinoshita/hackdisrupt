@@ -76,7 +76,8 @@ class Header extends Component {
       </div>
     ) : (
       <ButtonLink
-        size={isOpen ? 'large block' : 'small'}
+        size={isOpen ? 'large' : 'small'}
+        block={isOpen}
         href={`${process.env.API_URL}/auth/github`}
       >
         <Github style={{ marginRight: '10px' }} size="16" />

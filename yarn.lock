@@ -2580,9 +2580,9 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-hackdisrupt-ui@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/hackdisrupt-ui/-/hackdisrupt-ui-0.0.2.tgz#b70373b8eebc051a6b12552d2b2b4451971b996f"
+hackdisrupt-ui@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/hackdisrupt-ui/-/hackdisrupt-ui-0.0.3.tgz#172fbed9fb00b06a22584d8b5497ad7aa5b7a88f"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"
