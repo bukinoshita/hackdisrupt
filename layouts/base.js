@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import Header from './../components/header'
 
 import api from './../services/api'
+import { getCookie } from './../services/cookies'
 
 class Base extends Component {
   constructor() {
@@ -17,11 +18,19 @@ class Base extends Component {
   }
 
   componentDidMount() {
-    return api.get('/account', {}).then(({ user }) => {
-      this.setState({
-        account: user,
-        fetched: true
+    const token = getCookie('hackdisrupt')
+
+    if (token) {
+      return api.get('/account').then(({ user }) => {
+        this.setState({
+          account: user,
+          fetched: true
+        })
       })
+    }
+
+    this.setState({
+      fetched: true
     })
   }
 
