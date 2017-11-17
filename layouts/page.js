@@ -107,6 +107,10 @@ const Page = ({ children }) => {
             list-style: none;
           }
 
+          img {
+            max-width: 100%;
+          }
+
           #nprogress {
             pointer-events: none;
           }
@@ -127,13 +131,23 @@ const Page = ({ children }) => {
             right: 0px;
             width: 100px;
             height: 100%;
-            box-shadow: 0 0 10px ${colors.black}, 0 2px 2px ${colors.black};
+            box-shadow: 0 0 10px ${colors.black}, 0 0 5px ${colors.black};
             opacity: 1;
             transform: rotate(3deg) translate(0px, -4px);
           }
 
           svg {
             vertical-align: middle;
+          }
+
+          ::-moz-selection {
+            background: ${colors.azure};
+            color: ${colors.white};
+          }
+
+          ::selection {
+            background: ${colors.azure};
+            color: ${colors.white};
           }
         `}
       </style>

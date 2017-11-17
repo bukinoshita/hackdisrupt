@@ -3,11 +3,11 @@
 import React from 'react'
 import { Github } from 'react-feather'
 import PropTypes from 'prop-types'
+import ButtonLink from 'hackdisrupt-ui/build/button-link'
+import Link from 'next/link'
 
 import { colors, typography, phone } from './../theme'
 import Row from './../ui/row'
-import ButtonLink from './../ui/button-link'
-import Header from './../components/header'
 
 const HomeMain = ({ count = 0, logged = false }) => {
   const message = logged ? (
@@ -41,8 +41,6 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
   return (
     <Row>
-      <Header />
-
       <div className="hero">
         <div className="hero-content">
           <h1>
@@ -58,11 +56,29 @@ const HomeMain = ({ count = 0, logged = false }) => {
         </div>
       </div>
 
+      <footer>
+        <ul>
+          <li>
+            <Link href="/polls">
+              <span>
+                polls <label>new</label>
+              </span>
+            </Link>
+          </li>
+
+          <li>
+            <a href="https://github.com/bukinoshita/hackdisrupt">
+              <span>github</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
       <style jsx>{`
         .hero {
           display: flex;
           align-items: center;
-          height: calc(100vh - 200px);
+          height: 100vh;
         }
 
         h1 {
@@ -81,37 +97,62 @@ const HomeMain = ({ count = 0, logged = false }) => {
 
         h2 {
           margin-top: 30px;
-          color: #c0c0c0;
+          color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f18};
+          font-size: ${typography.f16};
         }
 
         p {
-          color: #c0c0c0;
+          color: ${colors.silver};
           font-weight: ${typography.regular};
-          font-size: ${typography.f18};
+          font-size: ${typography.f16};
           margin-top: 10px;
           margin-bottom: 50px;
         }
 
+        footer {
+          position: absolute;
+          bottom: 50px;
+        }
+
         li {
+          margin-right: 30px;
           display: inline-block;
-          margin-right: 20px;
+          position: relative;
         }
 
-        .footer__link {
-          font-weight: ${typography.medium};
-          text-transform: lowercase;
+        li span {
           color: ${colors.black};
-          cursor: pointer;
           font-size: ${typography.f14};
-          opacity: 0.5;
+          font-weight: ${typography.semibold};
+          cursor: pointer;
         }
 
-        .footer__link:hover {
-          text-decoration: underline;
+        li span:after {
+          content: '';
+          height: 1px;
+          background: ${colors.black};
+          position: absolute;
+          pointer-events: none;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          transform: scale(0, 1);
+          transition: all 200ms;
+        }
+
+        li:hover span:after {
           opacity: 1;
-          transition: 0.15s;
+          transform: scale(1, 1);
+        }
+
+        label {
+          border: 1px solid ${colors.black};
+          font-size: ${typography.f8};
+          padding: 0 4px 1px;
+          margin-left: 2px;
+          cursor: pointer;
         }
 
         @media ${phone} {
