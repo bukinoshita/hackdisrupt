@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import Row from './../ui/row'
 import Logo from './../ui/logo'
 
-import { typography } from './../theme'
+import { colors, typography } from './../theme'
 
 class Header extends Component {
   constructor() {
@@ -68,11 +68,21 @@ class Header extends Component {
       <header>
         <Row>
           <div>
-            <Link href="/">
-              <span>
-                <Logo size="130px" />
-              </span>
-            </Link>
+            <nav>
+              <Link prefetch href="/">
+                <span>
+                  <Logo size="130px" />
+                </span>
+              </Link>
+
+              <ul>
+                <li>
+                  <Link prefetch href="/polls">
+                    <span>polls</span>
+                  </Link>
+                </li>
+              </ul>
+            </nav>
 
             {logged}
           </div>
@@ -85,6 +95,40 @@ class Header extends Component {
             height: 100px;
             line-height: 100px;
             align-items: center;
+          }
+
+          nav {
+            display: flex;
+          }
+
+          ul {
+            margin-left: 50px;
+          }
+
+          li span {
+            color: ${colors.black};
+            font-size: ${typography.f14};
+            font-weight: ${typography.semibold};
+            position: relative;
+          }
+
+          li span:after {
+            content: '';
+            height: 1px;
+            background: ${colors.black};
+            position: absolute;
+            pointer-events: none;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transform: scale(0, 1);
+            transition: all 200ms;
+          }
+
+          li:hover span:after {
+            opacity: 1;
+            transform: scale(1, 1);
           }
 
           span {
