@@ -1,14 +1,14 @@
 'use strict'
 
 import React, { Component } from 'react'
-import Input from 'hackdisrupt-ui/build/input'
-import Button from 'hackdisrupt-ui/build/button'
 import Router from 'next/router'
 
 import Page from './../../layouts/page'
 import Base from './../../layouts/base'
 
 import Row from './../../ui/row'
+import Input from './../../ui/input'
+import Button from './../../ui/button'
 
 import Hero from './../../components/hero'
 
