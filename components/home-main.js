@@ -3,11 +3,12 @@
 import React from 'react'
 import { Github } from 'react-feather'
 import PropTypes from 'prop-types'
-import ButtonLink from 'hackdisrupt-ui/build/button-link'
 import Link from 'next/link'
 
-import { colors, typography, phone } from './../theme'
 import Row from './../ui/row'
+import ButtonLink from './../ui/button-link'
+
+import { colors, typography, phone } from './../theme'
 
 const HomeMain = ({ count = 0, logged = false }) => {
   const message = logged ? (

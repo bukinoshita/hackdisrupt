@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react'
 import Link from 'next/link'
-import ButtonLink from 'hackdisrupt-ui/build/button-link'
 import { Github, Menu } from 'react-feather'
 import PropTypes from 'prop-types'
 import ClickOutside from 'react-click-outside'
@@ -10,6 +9,7 @@ import classnames from 'classnames'
 
 import Row from './../ui/row'
 import Logo from './../ui/logo'
+import ButtonLink from './../ui/button-link'
 
 import { colors, typography, phone } from './../theme'
 

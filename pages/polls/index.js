@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import TimeAgo from 'react-timeago'
 import brazilianStrings from 'react-timeago/lib/language-strings/pt-br'
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter'
-import Button from 'hackdisrupt-ui/build/button'
+import Button from './../../ui/button'
 
 import { colors, typography } from './../../theme'
 

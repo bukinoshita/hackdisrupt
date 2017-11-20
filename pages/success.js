@@ -7,9 +7,10 @@ import Router from 'next/router'
 import Link from 'next/link'
 import shareTwitter from 'share-twitter'
 import shareFacebook from 'share-facebook'
-import ButtonLink from 'hackdisrupt-ui/build/button-link'
+
 import Page from './../layouts/page'
 
+import ButtonLink from './../ui/button-link'
 import Row from './../ui/row'
 import Logo from './../ui/logo'
 
